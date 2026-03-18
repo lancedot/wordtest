@@ -2,195 +2,195 @@ import { UnitStory } from "@/lib/unit-story";
 
 export const manualUnitStories: Record<string, UnitStory> = {
   "scholastic-g5-g5-u1-w1": {
-    title: "第 1 单元荒诞记忆短文",
+    title: "Unit 1 Story",
     paragraphs: [
-      "周一早上，五年级五班刚准备升旗，校长却抱着一个巨大的蓝色 receptacle（容器）冲上操场，说这是新来的“意见箱二号机”。大家还没来得及鼓掌，值日生小顾就把国旗绳打成了死结，闹出一个大 blunder（错误）。全班本来想笑，可校长偏偏 generally（通常）最讨厌别人一大早笑得太大声，于是所有人只好把脸憋成包子。",
-      "这时，刚转学来的小李是个十足的 novice（初学者），第一次负责广播。他一紧张，手就开始 quiver（发抖），把《升旗进行曲》误播成了《生日快乐歌》。操场边那台年久失修的喇叭听起来特别 hazardous（危险的），每响一下都像要喷出火星。体育老师急得满场跑，还没想清楚就 rash（草率地）踩上滑板，结果连人带哨子一起冲进了花坛。",
-      "最离谱的是，校长原本想 veto（否决）这场越闹越大的闹剧，可蓝色意见箱二号机突然自己打开盖子，用广播腔宣布：“今天的混乱表现非常 outstanding（突出的）！”接着它还一本正经地解释，说学校的安排本来就 variable（多变的），偶尔把升旗仪式办成喜剧现场，也是校园文化的一部分。全班先是安静了三秒，随后笑得连隔壁班老师都以为操场上养了一群会讲相声的鸭子。"
+      "On Monday morning, Class 5B was ready for the flag-raising ceremony when the principal ran onto the playground carrying a giant blue **receptacle（容器）**. He announced that it was the school's brand-new \"Suggestion Box Number Two.\" Before anyone could clap, Gu, the student on duty, tied the flag rope into a knot and made a huge **blunder（错误）**. The whole class wanted to laugh, but the principal **generally（通常）** hated loud laughter first thing in the morning, so everyone had to squeeze their faces still.",
+      "Then Li, a complete **novice（初学者）** who had just transferred to our class, was asked to handle the morning broadcast for the first time. He got so nervous that his hands began to **quiver（发抖）**, and instead of the marching song, he played \"Happy Birthday.\" The old speaker beside the field sounded terribly **hazardous（危险的）**, as if it might spit sparks every time it crackled. The PE teacher rushed around in panic and, without thinking, stepped onto a skateboard too **rash（草率地）**, flying straight into the flowerbed with his whistle.",
+      "The wildest part came when the principal tried to **veto（否决）** the whole disaster, but the blue box suddenly popped open and announced in a radio voice, \"Today's chaos is truly **outstanding（突出的）**!\" It then explained very seriously that the school's plans were always a little **variable（多变的）**, and turning a ceremony into a comedy once in a while was simply part of campus culture. The class went quiet for three seconds, and then everyone laughed so hard that the next classroom probably thought we were raising a flock of ducks that could perform stand-up comedy."
     ]
   },
   "scholastic-g5-g5-u1-w2": {
-    title: "第 2 单元荒诞记忆短文",
+    title: "Unit 2 Story",
     paragraphs: [
-      "周三一早，学校忽然宣布要举行“幸福指数大检测”。操场中央摆着一台巨大的南瓜机器，谁站上去，它就会判断你今天是不是 blissful（幸福的）。食堂也很配合，端出了 bountiful（丰盛的）早餐：南瓜包、南瓜粥、南瓜饼，连豆浆上都漂着一片南瓜。只有刚转学来的小何最 bewildered（困惑的），因为他完全不明白，为什么连早餐都像在参加比赛。",
-      "等检测正式开始，大家才发现事情没有看起来那么简单。负责记分的机器外壳又大又 cumbersome（笨重的），四个老师一起推，才把它挪到旗杆旁边。更 daunting（令人发怵的）是，它一通电就发出 ceaseless（不停的）提示音，嘴里反复喊着：“请微笑！请更快乐地微笑！”声音响得连楼上的鸽子都集体飞走了。角落里那只原本一直 dormant（休眠的）南瓜兔吉祥物，也被吵醒了，慢悠悠睁开眼，像是准备看热闹。",
-      "真正的麻烦出在第三轮。那只南瓜兔忽然跳上评分台，假装帮同学加分，其实偷偷改分数，原来它是个很 treacherous（不可靠的）小家伙。它甚至规定，谁笑得不够大声，谁就要去操场跑十圈，这套规则听起来简直太 brutal（残忍的）。全班正要抗议，科学老师已经举着记录表冲上台，证明小何的举报完全 valid（有效）。校长当场宣布机器停用，大家改成自由吃早餐、自由讲笑话。五年级五班一下子又恢复成真正 blissful（幸福的）样子，而那只坏兔子则被罚坐在门口，闻着南瓜饼香味认真反省。"
+      "Early Wednesday morning, the school suddenly announced a \"Happiness Test.\" In the middle of the playground stood a huge pumpkin machine. Whoever stepped onto it would be judged as either happy or **blissful（幸福的）**. The cafeteria joined in by serving a **bountiful（丰盛的）** breakfast of pumpkin buns, pumpkin porridge, and pumpkin pancakes. Even the soy milk had little pumpkin slices floating on top. Only He, the new transfer student, looked completely **bewildered（困惑的）**, because he had no idea why breakfast felt like a contest.",
+      "Once the test officially began, everyone realized it was not as simple as it looked. The scoring machine was so **cumbersome（笨重的）** that four teachers had to push it beside the flagpole. Even more **daunting（令人发怵的）**, once it was turned on, it began beeping **ceaseless（不停的）** reminders: \"Please smile! Smile more happily!\" The sound was so loud that even the pigeons upstairs flew away together. In the corner, the pumpkin-rabbit mascot that had been **dormant（休眠的）** all morning slowly opened its eyes, as if it were ready to enjoy the show.",
+      "The real trouble began in round three. The pumpkin rabbit suddenly hopped onto the scoring platform and pretended to help students earn points, but it was secretly changing the numbers. It turned out to be a very **treacherous（不可靠的）** little creature. It even declared that anyone who did not laugh loudly enough had to run ten laps around the field, which sounded absolutely **brutal（残忍的）**. The class was about to protest when the science teacher rushed up with a record sheet and proved that He's complaint was completely **valid（有效）**. The principal shut the machine down at once, and everyone went back to freely eating breakfast and telling jokes. Class 5B became truly **blissful（幸福的）** again, while the naughty rabbit had to sit by the door and reflect on its behavior while smelling pumpkin pancakes."
     ]
   },
   "scholastic-g5-g5-u1-w3": {
-    title: "第 3 单元荒诞记忆短文",
+    title: "Unit 3 Story",
     paragraphs: [
-      "发明展示日那天，班主任一进门就宣布，学校 allow（允许）每个同学带一件“绝不普通”的作品来礼堂。小周第一个推上台的，是一台会自动写表扬信的机器人。它刚一开机，就用广播腔给每个人发 compliment（夸奖），连门口扫地的大爷都收到一句：“您今天挥扫帚的姿势十分优雅。”全场立刻笑成一片。",
-      "可热闹只维持了五分钟。班长开始认真提出 criticism（批评），因为这台机器人虽然很 unique（独特的），外壳却实在太 flimsy（脆弱的），看起来像用饼干盒和胶带拼出来的。果然，它才走到讲台边，就嚷嚷自己出现了 fatigue（疲惫），然后啪地坐到地上，要求先喝一杯热可可再继续工作。校长本来还以为今天只是一次 ordinary（普通的）展示会，看到这里已经开始揉太阳穴。",
-      "为了防止场面继续失控，副校长赶紧宣布，学校从现在起 prohibit（禁止）任何会喷火、喷水或突然唱歌的发明继续上台。就在大家以为比赛要提前结束时，那台机器人却突然重新站起，胸口的小灯一闪一闪，爆发出惊人的 vigor（精力）。它先扶正了自己那块并不 substantial（结实的）外壳，又一本正经地把全班的优点夸了一遍，最后还给校长递上一张写着“请多睡觉，少皱眉”的建议单。礼堂安静了三秒，然后所有人都承认：这台破破烂烂的机器人，确实是今天最厉害的作品。"
+      "On Invention Day, our homeroom teacher walked in and announced that the school would **allow（允许）** every student to bring one invention that was \"absolutely not ordinary\" to the auditorium. Zhou pushed up first with a robot that could automatically write praise letters. The moment it turned on, it started giving everyone a **compliment（夸奖）** in a broadcast voice. Even the janitor by the door received one: \"Your sweeping posture is very elegant today.\" The whole room burst into laughter.",
+      "The excitement lasted only five minutes. The class monitor began offering serious **criticism（批评）**, because although the robot was certainly **unique（独特的）**, its shell looked far too **flimsy（脆弱的）**, as if it had been built from cookie boxes and tape. Sure enough, it barely reached the edge of the stage before declaring that it was suffering from **fatigue（疲惫）**, sitting down with a plop, and demanding a cup of hot cocoa before continuing. The principal had thought the day would be an **ordinary（普通的）** exhibition, but by then he was already rubbing his temples.",
+      "To stop the situation from getting worse, the vice principal quickly announced that the school would now **prohibit（禁止）** any invention that could breathe fire, spray water, or suddenly sing. Just when everyone thought the competition would end early, the robot stood back up. The little light on its chest blinked, and it burst with amazing **vigor（精力）**. First it straightened its not very **substantial（结实的）** body, then it praised every student's good points, and finally it handed the principal a note that said, \"Please sleep more and frown less.\" The auditorium fell silent for three seconds, and then everyone agreed: shabby as it looked, that robot was definitely the best invention of the day."
     ]
   },
   "scholastic-g5-g5-u1-w4": {
-    title: "第 4 单元荒诞记忆短文",
+    title: "Unit 4 Story",
     paragraphs: [
-      "学校这周请来一只猫担任“校园文明体验官”。它刚到教室时看起来特别 considerate（体贴的），先把被风吹乱的作业本一摞摞排整齐，还把掉在地上的铅笔轻轻叼回同学桌上。大家都觉得这活动挺 interesting（有趣的），连一向最严肃的数学老师都忍不住夸它懂礼貌。",
-      "可一到第二节课，这只猫忽然变得特别 frisky（活蹦乱跳的），一下跳上窗台，一下钻进讲桌，最后还把校长的领带当毛线团拨来拨去。偏偏值日生小马今天又格外 heedless（粗心的），忘了关好教室侧门，结果三只来参加参观活动的鹅直接摇摇摆摆冲了进来，把原本安静的体验课闹得乱七八糟。班主任看着满地羽毛，开始怀疑把这只猫留下来当 permanent（永久的）校园项目，会不会有点 ridiculous（荒谬的）。",
-      "最离谱的是，平时最 sluggish（慢吞吞的）校龟居然在关键时刻最清醒。它慢慢爬到讲台中央，严肃地表示，现在最 sensible（明智的）做法，是先把猫和鹅都请到操场去冷静一下，不然这堂课只会越来越 tiresome（烦人的）。大家正觉得它说得很对，头顶那块装饰横幅却忽然一歪，整个展示架都跟着变得 unstable（不稳定的）。于是全班立刻行动，有人扶架子，有人赶鹅，有人抱猫。等秩序终于恢复时，校长喘着气总结：今天大家学到的文明第一课，就是别低估一只太兴奋的猫。"
+      "This week the school invited a cat to serve as the \"Campus Manners Officer.\" When it first entered our classroom, it seemed wonderfully **considerate（体贴的）**. It neatly stacked the homework notebooks that the wind had blown around and gently carried dropped pencils back to students' desks. Everyone thought the whole event was very **interesting（有趣的）**, and even our always-serious math teacher praised the cat for being polite.",
+      "But by second period, the cat suddenly turned extremely **frisky（活蹦乱跳的）**. It leaped onto the windowsill, crawled into the teacher's desk, and finally batted at the principal's tie as if it were a ball of yarn. At the same time, Ma, the student on duty, was especially **heedless（粗心的）** and forgot to shut the side door. As a result, three geese that had come for the school tour waddled straight into the room and turned the once peaceful lesson into total confusion. Looking at feathers all over the floor, our teacher started wondering whether making the cat a **permanent（永久的）** school program had been a little **ridiculous（荒谬的）**.",
+      "The strangest part was that the school turtle, who was usually the most **sluggish（慢吞吞的）** creature on campus, was the calmest in the emergency. It slowly crawled to the center of the room and announced that the most **sensible（明智的）** thing to do was to escort both the cat and the geese outside before the lesson became even more **tiresome（烦人的）**. Just as everyone was nodding in agreement, the decorative banner above us tilted and the display stand became dangerously **unstable（不稳定的）**. So the whole class sprang into action: some students held the stand, some chased the geese, and some carried the cat away. When order finally returned, the principal panted and said that the first lesson in manners today was simple: never underestimate an overexcited cat."
     ]
   },
   "scholastic-g5-g5-u1-w5": {
-    title: "第 5 单元荒诞记忆短文",
+    title: "Unit 5 Story",
     paragraphs: [
-      "学校决定把旧仓库改造成“未来体育馆”，校长一大早就把 blueprint（蓝图）铺在讲台上，认真介绍里面的新设施：自动记分牌、会鼓掌的看台，还有一条专门给吉祥物跑步的通道。大家正听得入迷，地板却忽然轻轻一抖，像发生了一场迷你 earthquake（地震），把粉笔灰都震成了一小团白云。",
-      "体育老师赶紧翻开施工 guidebook（指南），想确认这种情况该先撤离还是先关电，结果发现临时 headquarters（指挥部）竟然设在仓库后门边的一张折叠桌上，桌旁还摆着一盆葡萄藤。原来美术老师想提前营造冠军休息区的气氛，硬把那里布置得像个小 vineyard（葡萄园）。就在大家手忙脚乱的时候，橄榄球社的阿杰为了证明体育馆已经能用，突然抱球往前一冲，居然真的完成了一次 touchdown（达阵），看得全班一起大叫。",
-      "真正让大家安静下来的，是仓库新装上的巨大 windshield（挡风玻璃）。阳光一照，它像电影幕布一样亮起来，把所有人都看得 spellbound（入迷的）。可下一秒，场馆中央试运行的喷泉装置突然转出一个小小的 whirlpool（漩涡），把校长的蓝图卷得满场乱飞。大家本来以为要挨骂，没想到校长追着图纸跑了两圈后忽然停下，抬头宣布：‘能把施工演示、球赛和灾难片同时演出来，这地方已经算 masterpiece（杰作）了。’全场先愣了一秒，随后笑得连仓库顶上的鸽子都拍着翅膀表示赞成。"
+      "The school decided to turn the old warehouse into a \"Future Gym,\" and early in the morning the principal spread a huge **blueprint（蓝图）** across the teacher's desk. He carefully introduced the new features: an automatic scoreboard, cheering stands, and even a special lane for mascots to run through. Everyone listened with shining eyes when the floor suddenly trembled, like a tiny **earthquake（地震）**, shaking the chalk dust into little white clouds.",
+      "The PE teacher hurriedly opened the construction **guidebook（指南）** to check whether we should evacuate or cut the electricity first. To his surprise, the temporary **headquarters（指挥部）** had been set up on a folding table by the back door of the warehouse, right beside a grapevine. The art teacher had tried to create the mood of a champion's lounge and had decorated the place like a tiny **vineyard（葡萄园）**. While everyone was running around in confusion, Jie from the football club suddenly grabbed a ball and charged forward to prove that the gym already worked. To everyone's shock, he actually scored a perfect **touchdown（达阵）**.",
+      "What really silenced the room was the giant new **windshield（挡风玻璃）** installed at the front of the warehouse. Once the sunlight hit it, it glowed like a movie screen and left everyone **spellbound（入迷的）**. But a second later, the test fountain in the middle of the hall spun into a little **whirlpool（漩涡）**, sucking the principal's blueprint into a swirl of paper. We all thought we were about to be scolded, but after chasing the pages for two full laps, the principal stopped, looked up, and declared, \"If a place can perform a construction demo, a football game, and a disaster movie at the same time, it already counts as a **masterpiece（杰作）**.\" The room froze for a second, then burst into laughter so loud that even the pigeons on the roof seemed to flap in agreement."
     ]
   },
   "scholastic-g5-g5-u1-w6": {
-    title: "第 6 单元荒诞记忆短文",
+    title: "Unit 6 Story",
     paragraphs: [
-      "礼堂这周被借去彩排一场超豪华的 bridal（婚礼的）童话剧。美术组刚把蛋糕模型推进来，负责扮白马的道具马却突然失控，原来它头上的 bridle（缰绳）被系反了。那匹木马一路冲上舞台，把本来就做得有点 coarse（粗糙的）泡沫拱门撞出一个大豁口，吓得花童们抱着假玫瑰四散逃跑。",
-      "导演老师赶紧挥着本子，要大家按既定 course（流程）继续排练。可后台的 crews（工作人员）显然已经集体放飞自我，有人忙着给喷雾机加肥皂水，有人把礼炮装进了小推车，甚至还有两个人偷偷把舞台边那只天鹅船推去走廊，准备来一场午休 cruise（巡游）。为了救场，音乐老师只好抱起一把 lute（鲁特琴）亲自上阵，试图用古典音乐压住全场的混乱。",
-      "谁知刚弹到第二段，音响里突然爆出一阵 foul（刺耳又糟糕的）尖叫，把守在门边的一只 fowl（家禽）道具鹅都吓得扑腾起来。它一口叼走装假金币的道具箱，把里面的亮片和塑料珠宝全当 loot（战利品）拖进花坛。最后全班只能蹲在草地里找“黄金”，导演老师则长叹一口气说：‘这部婚礼剧最真实的地方，不是爱情，而是大家都在拼命救场。’"
+      "This week the auditorium was borrowed for rehearsals of a grand **bridal（婚礼的）** fairy-tale play. The art team had just rolled in the fake wedding cake when the prop horse playing the white steed suddenly went wild. Its **bridle（缰绳）** had been tied backward. The wooden horse charged across the stage and smashed a huge hole in the foam arch, which had already been made a little **coarse（粗糙的）**, sending the flower children running away with their plastic roses.",
+      "The director waved her notebook and shouted for everyone to continue according to the planned **course（流程）**. But the backstage **crews（工作人员）** had clearly decided to stop behaving. One person was pouring soap into the mist machine, another was loading confetti cannons onto a trolley, and two others were secretly pushing the swan boat prop into the hallway for a lunchtime **cruise（巡游）**. To save the performance, the music teacher grabbed a **lute（鲁特琴）** and tried to calm the chaos with classical music.",
+      "But halfway through the second tune, the speakers burst out with a **foul（刺耳又糟糕的）** scream so awful that even the prop **fowl（家禽）** goose by the door flapped in terror. It snatched the treasure box full of fake coins and dragged all the glitter and plastic jewels into the flowerbed as if they were **loot（战利品）**. In the end, the entire class had to crouch in the grass searching for \"gold,\" while the director sighed and said, \"The most realistic thing about this wedding play is not the romance. It's the fact that everyone is desperately trying to rescue it.\""
     ]
   },
   "scholastic-g5-g5-u1-w7": {
-    title: "第 7 单元荒诞记忆短文",
+    title: "Unit 7 Story",
     paragraphs: [
-      "健康宣传周那天，学校请来一只会背保健手册的鹦鹉当嘉宾。可它刚登台，大家就发现这位 invalid（病人）鹦鹉本身还缠着绷带，一边咳嗽一边坚持演讲。更糟的是，它带来的第一张海报竟然也是 invalid（无效的），因为上面把“每天喝八杯水”印成了“每天喝八杯墨水”，连一年级的小朋友都看傻了。",
-      "校长正想挽回局面，广播室又临时送来一个 present（礼物）: 一顶会闪灯的演讲帽。可真正负责主持的学生代表却一直没 present（出席），大家只好把帽子扣到讲台上，让它代替发言。帽子一本正经地讲了整整一个 minute（分钟），然后还补了一句：‘顺便提醒大家，校长的耐心非常 minute（极小的），所以请不要再问墨水能不能代替牛奶。’礼堂顿时笑得东倒西歪。",
-      "就在这时，科学组桌上的一个 object（物体）检测仪忽然立起来，郑重表示自己 object（反对）今天这场过于混乱的健康讲座。保洁阿姨推着桶进来清理 refuse（垃圾），校长却误会她是在 refuse（拒绝）配合安排，急得差点把扩音器摔地上。最后还是那顶帽子最冷静，它宣布今天的结论只有一句：‘真正健康的学校，不是没有混乱，而是混乱时还有人记得先把垃圾收走。’"
+      "During Health Week, the school invited a parrot that could recite an entire health handbook. But as soon as it stepped on stage, we noticed that this **invalid（病人）** parrot was wrapped in bandages itself, coughing while bravely trying to give a speech. Even worse, the first poster it brought was also **invalid（无效的）**, because it had printed \"Drink eight glasses of water every day\" as \"Drink eight glasses of ink every day.\" Even the first graders stared in disbelief.",
+      "The principal was trying to rescue the event when the broadcasting room delivered a glowing hat as a **present（礼物）**. Unfortunately, the student speaker who was supposed to host the program had not yet **present（出席）** himself, so everyone simply placed the hat on the podium and let it speak instead. The hat talked seriously for one whole **minute（分钟）**, then added, \"By the way, the principal's patience is very **minute（极小的）**, so please stop asking whether ink can replace milk.\" The entire auditorium nearly collapsed from laughter.",
+      "At that very moment, a testing **object（物体）** on the science table suddenly stood upright and announced that it **object（反对）**ed to this overly chaotic health lecture. The janitor rolled in to collect the **refuse（垃圾）**, but the principal thought she meant to **refuse（拒绝）** his instructions and almost dropped the loudspeaker. In the end, the flashing hat remained the calmest thing in the room. It concluded with one sentence: \"A truly healthy school is not a school without chaos. It is a school where someone still remembers to clean up the trash during the chaos.\""
     ]
   },
   "scholastic-g5-g5-u1-w8": {
-    title: "第 8 单元荒诞记忆短文",
+    title: "Unit 8 Story",
     paragraphs: [
-      "国际表演周开幕那天，礼堂后台像一间彻底失控的服装仓库。戏剧社原本打算排一段海边舞蹈，可服装老师拿着一件 bikini（比基尼）和一套 tuxedo（燕尾服）争论了半天，最后竟决定让男主角上半身穿礼服、下半身套沙滩裤，说这样才叫“正式又清凉”。化妆间里，音响师嘴里叼着 bologna（博洛尼亚香肠），手上还不停喷 cologne（古龙水），把后台熏得像一块会唱歌的香皂。",
-      "更荒诞的是，道具组抬来一个巨大的 cantaloupe（哈密瓜）当舞台中心装饰，旁边还摆着几盒 sardines（沙丁鱼）罐头，理由是“海边主题必须有海味”。可彩排刚开始，一只 tarantula（狼蛛）突然从桌布底下慢悠悠爬出来，吓得主持人尖叫着跳上钢琴，差点把开场音乐弹成惊悚片配乐。",
-      "为了不让全校以为今天是昆虫展，校长紧急宣布把节目改成操场 marathon（马拉松）追瓜赛，谁先抓住滚走的哈密瓜谁就是冠军。美术老师一边追一边跳起 vaudeville（杂耍喜剧）式小碎步，结果拐弯时撞翻了一筐 tangerine（橘子），自己也跟着一起滚进喷泉。等大家终于把哈密瓜、橘子和老师都捞上来时，礼堂外的鼓掌声已经响成一片，因为全校都承认：这场演出虽然乱，但绝对比普通节目难忘得多。"
+      "On the opening day of International Performance Week, the backstage area of the auditorium looked like a costume warehouse that had completely lost its mind. The drama club had planned a seaside dance, but the costume teacher spent ten minutes arguing over whether the lead actor should wear a **bikini（比基尼）** or a **tuxedo（燕尾服）**. In the end, she decided he should wear formal clothes on top and beach shorts on the bottom, calling it \"cool but elegant.\" Meanwhile, the sound engineer stood in the makeup room chewing **bologna（博洛尼亚香肠）** and spraying **cologne（古龙水）**, making the whole backstage smell like a singing bar of soap.",
+      "Things became even more absurd when the prop team carried in a giant **cantaloupe（哈密瓜）** to serve as the centerpiece of the stage. Next to it they placed several cans of **sardines（沙丁鱼）**, claiming that a beach theme needed seafood. But just as rehearsal began, a **tarantula（狼蛛）** slowly crept out from under the tablecloth. The host screamed, jumped onto the piano, and nearly turned the opening song into the soundtrack of a horror movie.",
+      "To keep the whole school from thinking the day had become an insect exhibition, the principal urgently changed the program into a playground **marathon（马拉松）** watermelon chase. Whoever caught the rolling cantaloupe first would be the winner. The art teacher chased after it while doing tiny **vaudeville（杂耍喜剧）** steps, took a sharp turn, crashed into a basket of **tangerine（橘子）**, and rolled straight into the fountain. By the time everyone had rescued the melon, the oranges, and the teacher, applause was already spreading outside the hall. The whole school agreed that the performance had been a disaster, but a very unforgettable one."
     ]
   },
   "scholastic-g5-g5-u1-w9": {
-    title: "第 9 单元荒诞记忆短文",
+    title: "Unit 9 Story",
     paragraphs: [
-      "环球美食日一开始，食堂门口就立着一只会摇尾巴的 alligator（短吻鳄）气球，它张着嘴不停吹番茄味泡泡，像在替今天的菜单做广告。旁边还有个戴黑眼罩的 bandit（强盗）玩偶守门，谁想进去吃饭，它就举着勺子喊：‘先夸主厨三句，不然不给进。’",
-      "一进后厨，大家更像走进了乱七八糟的世界巡游。烤架上的 barbecue（烧烤）滋滋作响，一盆 okra（秋葵）被摆成了皇冠，值班老师穿着 kimono（和服）端来一壶会冒彩虹泡泡的 syrup（糖浆）。校长本想安静坐在角落翻一会儿 magazine（杂志），结果那本杂志忽然自己翻页，还一本正经给今天的餐点打星评分，气得校长只好把它倒扣在托盘上。",
-      "最热闹的时候，门外突然冲进一辆 impala（黑斑羚）造型的小电车，车上站着一个自称 sheik（酋长）的三年级男孩，身上还穿着印满月亮的 pajamas（睡衣）。他挥着汤勺宣布，今天最后一道神秘甜品由“鳄鱼大厨”负责试吃。于是全场一边笑一边鼓掌，连最挑食的同学都承认，这顿饭虽然离谱，但确实比任何一次普通午餐都更有纪念价值。"
+      "Global Food Day began with a tail-wagging **alligator（短吻鳄）** balloon standing at the cafeteria entrance. Its mouth puffed out tomato-scented bubbles as if it were advertising the day's menu. Beside it stood a **bandit（强盗）** doll with a black eye patch guarding the door. Anyone who wanted to go in for lunch had to hear it shout, \"Praise the chef three times first, or no entry!\"",
+      "Inside the kitchen, things looked even stranger. The **barbecue（烧烤）** grill sizzled loudly, a bowl of **okra（秋葵）** had been arranged like a crown, and the teacher on duty came out wearing a **kimono（和服）** while carrying a teapot of rainbow-bubbling **syrup（糖浆）**. The principal sat down in a corner and tried to quietly read a **magazine（杂志）**, but it suddenly started flipping its own pages and rating the dishes with stars. Annoyed, he had to turn it upside down on his tray.",
+      "At the noisiest moment, a little electric cart shaped like an **impala（黑斑羚）** rolled in from outside. Standing on top was a third grader dressed as a **sheik（酋长）**, still wearing moon-patterned **pajamas（睡衣）**. Waving a soup ladle, he announced that the mysterious dessert of the day would be tasted first by the \"alligator chef.\" Everyone laughed and applauded, and even the pickiest eaters had to admit that this ridiculous lunch was far more memorable than any normal meal."
     ]
   },
   "scholastic-g5-g5-u1-w10": {
-    title: "第 10 单元荒诞记忆短文",
+    title: "Unit 10 Story",
     paragraphs: [
-      "毕业典礼彩排那天，礼堂门口居然停着一辆超长 limo（豪华轿车），司机还是一只戴墨镜的火烈鸟。车门一开，先下来一位打扮得像新闻主播的 coed（男女同校学生），后面又扶出一个紧张得直抖的 grad（毕业生）机器人。围观同学立刻像 fan（粉丝）一样挤到红毯两边，拍手拍得比真的颁奖典礼还热闹。",
-      "后台更夸张。话剧社的 champ（冠军）正抱着一堆 curio（小古玩）布置舞台，连一只会转头的假猫头鹰都被摆上了领奖台。美术老师举着 mike（麦克风）不断提醒大家别踩到礼服裙摆，谁知体育组的 ref（裁判）突然冲进来，坚持说典礼顺序必须像球赛一样分上下半场，还想用口哨决定谁先上台拿证书。",
-      "校长头都大了，只好去找隔壁学校来帮忙的老 rev（牧师；受尊敬的人）老师救场。可老师刚坐上临时叫来的 taxi（出租车），就被那只火烈鸟司机带去操场兜风，顺路还买了三杯奶昔。最后，礼堂里只剩机器人举着话筒镇定宣布：‘今天最重要的，不是流程完不完美，而是大家都已经努力长大了。’这句话一出，原本闹哄哄的现场居然安静了两秒，然后又因为火烈鸟按错喇叭笑成一团。"
+      "On the day of graduation rehearsal, an absurdly long **limo（豪华轿车）** was parked outside the auditorium, and the driver was a flamingo wearing sunglasses. When the door opened, a stylish **coed（男女同校学生）** dressed like a news anchor stepped out first, followed by a trembling robot **grad（毕业生）**. The students gathered along the red carpet and clapped like excited **fan（粉丝）**s at a real awards show.",
+      "Backstage, things were even more dramatic. The drama club **champ（冠军）** was decorating the stage with a pile of **curio（小古玩）** objects, including a fake owl that could turn its head. The art teacher held a **mike（麦克风）** and kept warning everyone not to step on the formal gowns. Then a sports **ref（裁判）** suddenly rushed in and insisted that the ceremony had to be run like a game, with first half and second half, and maybe even whistles to decide who should receive a certificate first.",
+      "The principal was getting desperate, so he went looking for an older **rev（受尊敬的人）** from the neighboring school to save the event. But the poor man had just climbed into a borrowed **taxi（出租车）** when the flamingo driver took him for a ride around the playground and somehow bought three milkshakes on the way. In the end, the robot stood in the auditorium holding the microphone and calmly announced, \"The most important thing today is not whether the program is perfect. It is that everyone has tried hard to grow up.\" The room actually fell silent for two whole seconds, and then everyone burst into laughter again because the flamingo hit the horn by mistake."
     ]
   },
   "scholastic-g5-g5-u1-w11": {
-    title: "第 11 单元荒诞记忆短文",
+    title: "Unit 11 Story",
     paragraphs: [
-      "科技周开幕那天，礼堂天花板忽然亮起一道 flare（闪光信号），像有人在屋顶偷偷发求救信号。大家还没回神，门口就刮进一阵 flurry（突然的一阵乱动），把校长的演讲稿吹得到处乱飞。最奇怪的是，舞台幕布缝里一直透着一点 glimmer（微光），看起来真像藏着什么神秘机器。",
-      "科学老师顺着亮光找过去，果然在后台发现了一个刚搭好的 spacelab（太空实验室）模型，里面还摆着会闪灯的试管和一只穿白大褂的玩具猴子。可模型刚通电，警报就突然乱响，广播室赶紧假装镇定，宣布启动 medevac（医疗后送）演练，准备把“被吓晕的橡皮擦”送去保健室。谁知话音刚落，操场上又飘下来一队 paratroops（伞兵部队）玩偶，踩着小降落伞落在花坛边，像真的来执行秘密任务一样。",
-      "最热闹的还是美术组那边。有人一紧张打翻颜料，墙上顿时一片 splatter（飞溅的斑点）；窗外的鸭子被警报惊到，扯着嗓子 squawk（尖声叫喊）个不停；科学老师为了画示意图，随手在黑板上勾了几笔，一个弯弯扭扭的 squiggle（弯曲线条）竟然在板面上自己扭动起来。最后校长扶着额头宣布，学校必须举办一场 telethon（电视募捐马拉松），因为要是再不买新设备，这个礼堂迟早会真的飞上天。"
+      "On the opening day of Science Week, a bright **flare（闪光信号）** suddenly flashed across the ceiling of the auditorium, as if someone on the roof were sending a secret distress call. Before anyone could recover, a wild **flurry（突然的一阵乱动）** of wind rushed through the doorway and sent the principal's speech pages flying everywhere. Strangest of all, a tiny **glimmer（微光）** kept shining through a crack in the curtain, making it look as though some mysterious machine was hiding behind the stage.",
+      "The science teacher followed the light and discovered a brand-new **spacelab（太空实验室）** model backstage, complete with blinking test tubes and a toy monkey in a white coat. But the moment it was switched on, alarms began ringing. The broadcasting room tried to sound calm and announced a **medevac（医疗后送）** drill to rescue \"a frightened eraser.\" Then, as if that were not enough, a squad of toy **paratroops（伞兵部队）** drifted down onto the playground flowerbed on tiny parachutes, looking as though they had arrived for a secret mission.",
+      "The art room side of the hall became the noisiest of all. Someone spilled paint and made a huge **splatter（飞溅的斑点）** on the wall. Ducks outside began to **squawk（尖声叫喊）** in alarm. The science teacher sketched a quick diagram on the board, and one crooked **squiggle（弯曲线条）** actually started wriggling by itself. At last the principal held his forehead and declared that the school now needed to hold a **telethon（电视募捐马拉松）**, because if we did not buy better equipment soon, the auditorium might truly launch itself into space."
     ]
   },
   "scholastic-g5-g5-u1-w12": {
-    title: "第 12 单元荒诞记忆短文",
+    title: "Unit 12 Story",
     paragraphs: [
-      "自然观察日那天，学校决定把操场临时改成“动物集合名词体验园”。花坛里先铺出一 bed（一片）郁金香，旁边还有一群蚂蚁排成整齐的 colony（群落），正努力搬运不知道谁掉下来的半块曲奇。大家本来还觉得今天应该会很安静，结果第一节课还没下，一切就开始朝离谱的方向发展。",
-      "池塘边忽然来了一群大鹅，边走边吵，标准得像教科书里的 gaggle（鹅群）。操场角落里，几个男生因为谁先摸到新足球吵起来，很快凑成一小 gang（一伙人）。更妙的是，灌木丛后面居然蹲着几只狐狸，安安静静组成一个 skulk（狐狸群），像是在偷偷旁听学校大会。广播室老师看得太兴奋，差点把一群 parrots 的 company（一群鹦鹉）也请进来播午间新闻。",
-      "到午饭前，校门口又热闹起来：几匹小马排成一 string（一列），花坛边跳出一 knot（一群）蟾蜍，池水里挤着一 school（一群）金鱼，连远道而来的袋鼠都整整齐齐站成一 troop（一队）。校长本来想宣布活动结束，可一看这些动物比学生排队还整齐，只好改口说：‘今天最值得学习纪律的，恐怕不是五年级，而是那群袋鼠。’"
+      "On Nature Observation Day, the school turned the playground into an \"Animal Group Word Park.\" In the flowerbeds there was first a **bed（一片）** of tulips, and beside it an orderly ant **colony（群落）** marching away with half a cookie that nobody could explain. At first everyone thought the day would be peaceful, but before first period even ended, things had already become ridiculous.",
+      "A loud **gaggle（鹅群）** of geese suddenly appeared beside the pond, honking as they marched along. In the corner of the field, a few boys arguing over a new soccer ball quickly formed a little **gang（一伙人）**. Even better, several foxes were crouched behind the bushes in a quiet **skulk（狐狸群）**, as if they were secretly attending the school assembly. The broadcasting teacher got so excited that she almost invited a **company（一群）** of parrots into the studio to read the lunchtime news.",
+      "By lunchtime, the gate area had grown even busier. A **string（一列）** of ponies stood in a row, a **knot（一群）** of toads hopped by the flowerbed, a **school（一群）** of goldfish crowded the pond, and even a **troop（一队）** of kangaroos stood in a line more neatly than most students. The principal opened his mouth to end the activity, but after seeing that the animals were better at lining up than fifth graders, he changed his speech and admitted that the best lesson in discipline that day had probably come from the kangaroos."
     ]
   },
   "scholastic-g5-g5-u1-w13": {
-    title: "第 13 单元荒诞记忆短文",
+    title: "Unit 13 Story",
     paragraphs: [
-      "地理模型展那天，礼堂地板被铺成一张巨大地图，连空气里都有果冻和硬纸板混合的味道。入口处先摆着一串 archipelago（群岛）饼干，旁边一条巧克力河慢慢流到角落，最后在尽头堆出一块 delta（三角洲）形状的软泥。大家才刚进门，就已经觉得自己像误闯进了一本会发甜味的地理书。",
-      "再往里走，三年级用纸箱搭出一道深深的 gorge（峡谷），旁边还有一条细长的 isthmus（地峡）连接两块大平台。美术组把讲台边缘包成一个 peninsula（半岛），又在走廊尽头摆出一个有小椰树和吸管伞的 oasis（绿洲），像是专门给沙漠旅人卖冰饮的小摊。更高一点的展台被堆成 plateau（高原），而地毯下凹的一段则变成了 valley（山谷），吸引得一年级小朋友趴在边上不肯走。",
-      "压轴时，科学老师往蓝色果冻里切出一条 strait（海峡），又从旁边接来一条 tributary（支流），想让整张地图看起来更完整。校长站在一旁看得津津有味，结果点评时脚下一滑，顺着“山谷”一路滚到“海峡”边，差点撞翻整片群岛饼干。全场先安静了一秒，然后爆笑出声，因为大家都觉得，没有什么比一个掉进模型里的校长，更能帮助人记住这些地形。"
+      "On the day of the geography model show, the floor of the auditorium was covered with a giant map, and the air smelled strangely of jelly and cardboard. At the entrance there was a row of **archipelago（群岛）** cookies. Beside it, a chocolate river flowed slowly toward a blob of mud shaped like a **delta（三角洲）**. We had barely walked in before it felt as if we had wandered into a geography book that somehow tasted sweet.",
+      "Farther inside, the third graders had built a deep **gorge（峡谷）** out of cardboard boxes. Nearby, a narrow **isthmus（地峡）** connected two large platforms. The art team wrapped the edge of the stage into a **peninsula（半岛）**, and at the end of the hallway they created a tiny **oasis（绿洲）** complete with toy palm trees and drink umbrellas, like a cold drink stand for travelers lost in the desert. One raised platform became a **plateau（高原）**, while a dip in the carpet turned into a **valley（山谷）** that made the first graders lie on the floor and stare at it with delight.",
+      "For the grand finale, the science teacher carved a blue **strait（海峡）** through a tray of jelly and added a **tributary（支流）** beside it to complete the map. The principal stood nearby nodding with great interest, but just as he began to comment, he slipped and rolled down the \"valley\" toward the \"strait,\" nearly knocking over the entire cookie island chain. The hall went silent for one second and then exploded with laughter, because everyone agreed that nothing could help students remember landforms better than watching the principal fall right into one."
     ]
   },
   "scholastic-g5-g5-u1-w14": {
-    title: "第 14 单元荒诞记忆短文",
+    title: "Unit 14 Story",
     paragraphs: [
-      "诗歌节那天，语文老师一进教室就说，今天谁也不许只会背范文，大家要靠想象力赢比赛。她先在黑板上写出一组 rhyme（押韵词），又带着大家拍桌子找 meter（节奏）。结果第一排那个装了半盒彩笔的书包突然自己“咚咚咚”跟拍，把全班带得像要原地起舞。",
-      "轮到创作环节，班长先写了一个 simile（明喻），说校长的光头像月亮一样亮；副班长不甘示弱，立刻补上一组 couplet（对句），把这轮月亮写成“会在晨会上皱眉的煎饼”。美术老师看得兴起，干脆让黑板开口抱怨自己每天吃粉笔灰，这一下，personification（拟人）也被大家记得牢牢的。",
-      "后来同学们轮流挑战 haiku（俳句）、metaphor（隐喻）和 alliteration（头韵），连角落里的一年级小朋友都在认真模仿 onomatopoeia（拟声词），一边敲饭盒一边写“哐当”“啪嗒”。最后校长决定亲自压轴，站上讲台朗诵一首 sonnet（十四行诗）。他本想震撼全场，没想到刚读到第六行，窗外忽然响起一阵真正的“轰隆”，全班一下子分不清那是雷声，还是诗歌比赛进入了最戏剧化的高潮。"
+      "On Poetry Festival Day, our language teacher entered the room and announced that no one was allowed to win by simply memorizing model poems. We had to rely on imagination. She wrote a set of **rhyme（押韵词）** words on the board and had us tap our desks to find the **meter（节奏）**. Then the backpack in the front row, the one stuffed with half a box of crayons, started thumping along by itself and nearly turned the whole class into a dance troupe.",
+      "When it was time to create poems, the class monitor wrote a **simile（明喻）**, saying the principal's shiny head was as bright as the moon. Not to be outdone, the vice monitor added a **couplet（对句）** that described this moon as a pancake that frowned during morning assembly. The art teacher got so excited that she made the blackboard complain about eating chalk dust all day, which helped everyone remember **personification（拟人）** at once.",
+      "Later, students took turns trying **haiku（俳句）**, **metaphor（隐喻）**, and **alliteration（头韵）**. Even the first graders in the corner were practicing **onomatopoeia（拟声词）**, banging their lunchboxes while writing sound words. At the end, the principal decided to close the event by reading a **sonnet（十四行诗）** himself. He meant to amaze the audience, but when he reached line six, a real thunderous rumble sounded outside the window, and suddenly no one could tell whether it was weather or simply the poetry contest reaching its most dramatic moment."
     ]
   },
   "scholastic-g5-g5-u1-w15": {
-    title: "第 15 单元荒诞记忆短文",
+    title: "Unit 15 Story",
     paragraphs: [
-      "周五午休时，五年级五班的储物柜忽然自己弹开，里面滚出一个标着 doodad（小玩意儿）的铁皮盒。大家正围着盒子 chitchat（闲聊），猜里面到底装了什么，盒盖却突然“啪”地跳开，蹦出一把会唱歌的勺子和一只会眨眼的橡皮。班长吓得连喊 fiddlesticks（胡说；哎呀），可已经没人舍得把盒子关上了。",
-      "不到五分钟，整个教室就乱成一团 hodgepodge（大杂烩）。跳绳缠住尺子，橡皮追着粉笔跑，地球仪脑袋上甚至还扣着一个饭盒盖。小王看得整个人都 flabbergast（惊呆了），可小陈还是站在门口 lollygag（磨磨蹭蹭），一边吃果冻一边问大家，‘我们是不是应该先决定谁去叫老师？’卫生委员气得直说他太 namby-pamby（软弱没主见），这种时候还慢吞吞的。",
-      "这时广播室忽然传来一阵 hullabaloo（大吵大闹），全班冲出去一看，发现操场中央站着一只自称 rapscallion（小捣蛋鬼）的鸭子，正用教鞭指着黑板讲学校管理的 nitty-gritty（核心细节）。校长本来想把它请下去，谁知鸭子先递上一份写得比老师还详细的纪律建议书。于是大家一致决定，今天最离谱也最有才华的，不是那个铁皮盒，而是这只一本正经来开会的鸭子。"
+      "On Friday at lunch break, the storage locker of Class 5B suddenly popped open, and out rolled a tin box labeled **doodad（小玩意儿）**. While everyone gathered around in **chitchat（闲聊）** trying to guess what was inside, the lid flew open with a snap and a singing spoon and a blinking eraser sprang out. The class monitor shouted **fiddlesticks（胡说；哎呀）**, but by then nobody wanted to close the box again.",
+      "In less than five minutes, the whole classroom had become a **hodgepodge（大杂烩）**. Jump ropes wrapped around rulers, erasers chased chalk, and a globe somehow ended up wearing a lunchbox lid as a hat. Wang stood there completely **flabbergast（惊呆了）**, but Chen remained by the door **lollygag（磨磨蹭蹭）**ing, eating jelly and asking whether we should first decide who ought to call the teacher. The hygiene monitor was furious and said he was far too **namby-pamby（软弱没主见）** for a moment like this.",
+      "Then a burst of **hullabaloo（大吵大闹）** came from the broadcasting room. The whole class rushed outside and found a duck in the middle of the playground announcing itself as a **rapscallion（小捣蛋鬼）** while using a pointer to explain the **nitty-gritty（核心细节）** of school management on the board. The principal was ready to send it away, but the duck handed over a discipline report even more detailed than a teacher's. By the end of the day, everyone agreed that the most absurd yet strangely talented thing on campus had not been the tin box at all, but that extremely serious duck."
     ]
   },
   "scholastic-g5-g5-u1-w16": {
-    title: "第 16 单元荒诞记忆短文",
+    title: "Unit 16 Story",
     paragraphs: [
-      "词根主题日那天，老师刚把教室门打开，一只穿着小背心的 biped（两足动物）火鸡就昂首走了进来，像是今天的特邀嘉宾。它一跳上讲台，就要求班长先 enumerate（逐条列举）今天所有离谱安排，包括“会唱歌的黑板”“自己记分的橡皮”和“禁止香蕉旁听数学课”三项规定，听得全班已经开始偷笑。",
-      "接着，校长抱着一块写满数字的展示板进门，宣布学校从今天起要采取更 liberal（宽松的）课堂规则，因为真正的 liberty（自由）就是让学生敢想敢问，甚至可以讨论西瓜是否有资格参加朗诵比赛。数学老师正准备反驳，黑板上的 numeral（数字符号）却自己跳了起来，还为了谁该站在分数线上方抢来抢去。最后，最大的 7 一把坐上 numerator（分子）的位置，像赢得了某种王位。",
-      "事情到第三节课变得更热闹。礼堂外 suddenly 聚来 numerous（许多）纸片小人，它们一边踩着 pedal（踏板）风琴，一边排队进教室旁听。奖杯还被端端正正放到 pedestal（底座）上，像准备给今天最会闹腾的道具颁奖。门口那个原本只是提醒大家慢走的 pedestrian（行人）标志，甚至也严肃发言，要求全校以后走廊靠右、说话轻声。全班先是愣住，随后一致觉得：今天最像老师的，可能根本不是大人。"
+      "On Root Word Day, the teacher had barely opened the classroom door when a **biped（两足动物）** turkey wearing a tiny vest marched in like the special guest of the day. It hopped onto the podium and demanded that the class monitor **enumerate（逐条列举）** all of today's ridiculous plans, including a singing blackboard, a self-scoring eraser, and a rule banning bananas from sitting in on math lessons. By then, the whole class was already trying not to laugh.",
+      "Then the principal entered carrying a display board covered in numbers and announced that from now on the school would adopt more **liberal（宽松的）** classroom rules, because true **liberty（自由）** meant students should be free to think and ask questions, even about whether a watermelon deserved to enter a poetry recital. The math teacher was about to object when the **numeral（数字符号）**s on the board started jumping around on their own and fighting over who should stand above the fraction line. In the end, the biggest 7 plopped itself into the place of the **numerator（分子）** as if it had won a crown.",
+      "By third period, things were even livelier. **Numerous（许多）** little paper figures had gathered outside the auditorium, pumping a **pedal（踏板）** organ as they lined up to listen to class. The trophy had been placed neatly on a **pedestal（底座）**, as if waiting to reward the noisiest prop of the day. Even the **pedestrian（行人）** sign by the door, which normally just reminded people to walk carefully, suddenly made a stern speech about keeping right in the hallway and speaking softly. The class stared for a moment and then quietly agreed that the most teacher-like thing in the room that day might not have been a human at all."
     ]
   },
   "scholastic-g5-g5-u1-w17": {
-    title: "第 17 单元荒诞记忆短文",
+    title: "Unit 17 Story",
     paragraphs: [
-      "广播站开放日一开始，语文老师就先让大家 clarify（澄清）一件事：今天可以参观设备，但绝对不许把话筒当火箭发射器。话音刚落，窗外忽然传来一声 clarion（高而清亮的号角声），把礼堂门口那群鸽子吓得一起扑棱上天，连校长都条件反射地捂住了耳朵。",
-      "为了让整场参观保持 clarity（清晰），班长立刻举起一份 declaration（声明），郑重 declare（宣布）：谁要乱碰控制台，谁就去食堂帮阿姨削胡萝卜。可副班长偏偏不服，非要 dictate（口述）自己的演讲稿给录音笔，结果录音笔像个小 dictator（独裁者）一样发号施令，命令全班起立、坐下、再起立，搞得大家像在做奇怪的广播体操。",
-      "最精彩的是角落里那本 dictionary（词典）。它忽然啪地自己翻开，用最标准的 diction（措辞和发音）纠正每个人的读音，还一本正经 predict（预言）：‘十分钟后，校长会把葡萄汁泼到袖子上。’大家刚笑出声，校长果然举着一只紫色袖口冲进门。全场顿时安静了一秒，然后把最热烈的掌声送给了那本会算命、又很会教发音的词典。"
+      "At the beginning of Broadcasting Studio Open Day, the language teacher first asked everyone to **clarify（澄清）** one thing: today we were allowed to look at the equipment, but absolutely not to use the microphone as a rocket launcher. The moment she finished speaking, a **clarion（高而清亮的号角声）** blast rang out from outside, sending the pigeons by the auditorium flapping into the air and making even the principal cover his ears.",
+      "To keep the visit full of **clarity（清晰）**, the class monitor immediately held up a **declaration（声明）** and **declare（宣布）**d that anyone who touched the control panel without permission would have to peel carrots in the cafeteria. The vice monitor disagreed and insisted on using a recorder so he could **dictate（口述）** his speech. Unfortunately, the recorder began speaking like a tiny **dictator（独裁者）**, ordering the whole class to stand up, sit down, and stand up again as if we were doing bizarre radio calisthenics.",
+      "The best part was the **dictionary（词典）** in the corner. It suddenly flipped itself open and corrected everyone's **diction（措辞和发音）** in the clearest voice imaginable. Then it solemnly **predict（预言）**ed, \"In ten minutes, the principal will spill grape juice on his sleeve.\" We had barely started laughing when the principal rushed in holding up a purple-stained sleeve. The whole room went silent for one second, and then the loudest applause of the day was given to a dictionary that could both teach pronunciation and tell the future."
     ]
   },
   "scholastic-g5-g5-u1-w18": {
-    title: "第 18 单元荒诞记忆短文",
+    title: "Unit 18 Story",
     paragraphs: [
-      "科学展一开场，天气组就把一个 barometer（气压计）摆在门口，郑重宣布今天空气里除了气压变化，还混进了草莓布丁的味道。数学组当然不肯认输，马上推来一个巨大的圆盘模型，专门给大家演示 diameter（直径）到底怎么穿过圆心。可讲解才刚开始，一年级小朋友已经把它当成转盘游戏，差点把老师转晕。",
-      "操场边那台 kilometer（公里计）计步器也不甘寂寞，忽然自己开机，大声报出每个人今天走了多少步，还顺便背起了九九乘法表。负责修机器的 mechanic（机械师）老师刚蹲下准备检查，机器人助手已经抢先宣布要 mechanize（使机械化）整个午餐流程，吓得食堂阿姨连忙把汤锅抱走，生怕下一秒紫菜汤就被自动分装进订书机里。",
-      "最热闹的是保健室门口的“超级检测站”。桌上摆着 thermometer（温度计）和 speedometer（速度计），说要给跑步的同学做全套体测。生物老师原本在给大家解释 pathology（病理学）是研究疾病的学问，可角落里一只摔倒的小狗正得到同伴的 sympathy（同情），大家看着它被轮流安慰，竟一时忘了听课。最后校长看见自己为了示范速度差点摔进花坛，场面滑稽得有点 pathetic（又可怜又好笑），连老师们都忍不住笑弯了腰。"
+      "At the start of the science fair, the weather group placed a **barometer（气压计）** by the door and solemnly announced that the air today contained not only changes in pressure but also the scent of strawberry pudding. The math group refused to be outdone and wheeled in a giant disk model to demonstrate how the **diameter（直径）** passed through the exact center of a circle. The lesson had barely begun when the first graders started spinning it like a game wheel and nearly made the teacher dizzy.",
+      "The **kilometer（公里计）** step counter by the playground also decided it wanted attention. It switched itself on and loudly announced how far everyone had walked that day, then began reciting multiplication tables. The **mechanic（机械师）** teacher had just crouched down to inspect it when the robot assistant proudly declared that it would **mechanize（使机械化）** the entire lunch process. The cafeteria lady immediately grabbed the soup pot, afraid the seaweed soup might be automatically poured into a stapler next.",
+      "The busiest place of all was the \"super test station\" outside the nurse's office. On the table stood a **thermometer（温度计）** and a **speedometer（速度计）**, ready to give runners a complete checkup. The biology teacher had been explaining that **pathology（病理学）** was the study of disease, but everyone got distracted by a little dog in the corner receiving **sympathy（同情）** from its friends after a fall. By the time the principal tried to demonstrate speed and nearly fell into the flowerbed, the scene looked so comically **pathetic（又可怜又好笑）** that even the teachers bent over laughing."
     ]
   },
   "scholastic-g5-g5-u1-w19": {
-    title: "第 19 单元荒诞记忆短文",
+    title: "Unit 19 Story",
     paragraphs: [
-      "缩写词展示日那天，科技组一大早就在礼堂里摆满了古怪设备。食堂阿姨甚至送来一瓶 canola（菜籽油），说可以给机器人关节做保养。灯一暗，一束 laser（激光）直接在黑板上写出“今天不许无聊”，吓得第一排同学以为外星人终于决定来旁听英语课。",
-      "电脑角那台老 modem（调制解调器）一边嗡嗡作响一边努力联网，像个边打喷嚏边工作的老爷爷。天文组则搬来一张 quasar（类星体）海报，认真解释宇宙里有些东西亮得惊人。另一边的雷达模型和潜水模型也没闲着，radar（雷达）坚持自己最会发现远处目标，sonar（声呐）则不服，非说在水里自己才是真正的王者，两个模型差点在展示桌上吵出一场辩论赛。",
-      "混乱在潜水社出场时达到顶峰。穿着 scuba（水肺潜水装备）的吉祥物不知怎么卡进了窗框，广播室立刻宣布这是一场标准 snafu（大混乱）。副校长，也就是今天的 veep（副手）老陈，急得满礼堂乱跑，结果一转身把外套嗖地 zip（拉上）到了麦克风支架上，整个人差点被固定在原地。最后大家笑着总结：缩写词虽然短，可它们引发的麻烦，绝对一点也不短。"
+      "On Acronym Day, the technology group filled the auditorium with bizarre devices before school had even properly started. The cafeteria auntie even brought in a bottle of **canola（菜籽油）** oil and said it might help keep the robot joints moving. When the lights dimmed, a **laser（激光）** beam wrote \"No boring allowed today\" directly onto the blackboard, making the students in the front row think aliens had finally come to observe English class.",
+      "In the computer corner, an old **modem（调制解调器）** hummed and struggled to connect, like an elderly man sneezing while working. The astronomy group showed off a **quasar（类星体）** poster and carefully explained that some things in the universe were unbelievably bright. Nearby, the **radar（雷达）** model insisted it was best at detecting faraway objects, while the **sonar（声呐）** model argued that underwater it was the true champion. The two nearly turned the display table into a debate stage.",
+      "The chaos reached its peak when the diving club appeared. Their mascot, dressed in full **scuba（水肺潜水装备）** gear, somehow got stuck in the window frame. The broadcasting room instantly announced that this was a textbook **snafu（大混乱）**. Vice Principal Chen, today's **veep（副手）**, ran all over the auditorium in panic and then accidentally **zip（拉上）**ped his jacket onto the microphone stand while turning around. Everyone laughed and agreed that acronyms might be short, but the trouble they caused was definitely not."
     ]
   },
   "scholastic-g5-g5-u1-w20": {
-    title: "第 20 单元荒诞记忆短文",
+    title: "Unit 20 Story",
     paragraphs: [
-      "英语文化周那天，校长突然宣布全校今天都要体验“英式说法”。于是保健室门口被挂上了 chemist（药店）牌子，原本放扫把和课本的 cupboard（橱柜）也被贴上英文标签，连里面的茶壶都像突然变得更优雅了。大家一边偷笑，一边开始猜今天还有多少地方会被改名。",
-      "第二节课刚下，广播里就不断提醒大家：吃饭时要说 cutlery（餐具），别再只说刀叉；教室后面的小休息角今天可以假装叫 flat（公寓）；周五的放松活动也能称作 holiday（假期）时光。食堂阿姨听得十分上头，马上把储藏室改叫 larder（食品储藏室），还邀请大家搭临时布景做出的 lift（电梯）去二楼领取英式布丁。整个学校像忽然变成了一本会走路的词汇书。",
-      "最荒诞的是，幼儿园老师借来一辆 pram（婴儿车）帮校长运演讲稿，可车里先被一包会滚动的 nappy（尿布）占了座。放学前，大家又被安排去坐“underground（地铁）体验专列”小火车，结果它只是在操场上慢吞吞绕圈，最后稳稳停在食堂门口。校长看着大家笑成一团，只好承认：无论英式还是美式，真正重要的词，永远是‘先去吃饭’。"
+      "On English Culture Week, the principal suddenly announced that the whole school would spend a day using British expressions. A **chemist（药店）** sign appeared outside the nurse's office, and the **cupboard（橱柜）** that usually stored brooms and textbooks was relabeled in neat English. Even the teapot inside somehow seemed more elegant. Everyone kept smiling quietly and guessing what place would be renamed next.",
+      "After second period, the school radio kept reminding us to say **cutlery（餐具）** instead of simply forks and knives, to pretend the little reading corner at the back of the classroom was a **flat（公寓）**, and to refer to Friday's fun time as a **holiday（假期）** moment. The cafeteria auntie got so excited that she renamed the storage room the **larder（食品储藏室）** and invited everyone to take a makeshift **lift（电梯）** to the second floor for British pudding. The whole school felt as though it had turned into a walking vocabulary book.",
+      "The strangest part came when the kindergarten teacher borrowed a **pram（婴儿车）** to carry the principal's speech papers, only to find it already occupied by a rolling **nappy（尿布）**. Before dismissal, everyone was invited to ride the tiny \"**underground（地铁）** experience train,\" which simply circled the playground three times and stopped at the cafeteria. Watching everyone laugh, the principal finally admitted that whether the word was British or American, the most important phrase on campus would always be: go eat first."
     ]
   },
   "scholastic-g5-g5-u1-w21": {
-    title: "第 21 单元荒诞记忆短文",
+    title: "Unit 21 Story",
     paragraphs: [
-      "词源故事周开幕时，校长捧着一本印着金边的 academy（学校；学园）校刊走上讲台，后面跟着图书馆老师，怀里抱着一本厚厚的 album（相册）。奇怪的是，相册一打开，里面的班级合影竟会自己换姿势，好像每一页都不甘心只当普通照片。",
-      "大家正看得入迷，操场边忽然刮起一阵 cyclone（旋风），把花坛里的 dahlia（大丽花）卷得到处乱飞。食堂阿姨举着一瓶 ketchup（番茄酱）从窗口探出头来，大喊别把午饭洒到花上；舞蹈老师还穿着 leotard（紧身舞衣）冲出去救场，像在演一出“老师大战狂风”的现场剧。",
-      "等风终于小一点，语文老师举起一份 manuscript（手稿）继续讲词语的来历，生物老师顺势提醒大家每天都离不开 oxygen（氧气），地理老师又指着角落里的 volcano（火山）模型说别靠太近，否则它又要喷彩纸。就在大家以为课程终于能平静结束时，校长忽然 zany（滑稽古怪地）转了一圈，把整盒彩笔抛向半空。于是全班一致认定：今天最值得记住的，不只是词源，还有校长那神来一笔的登场方式。"
+      "At the opening of Word Origin Week, the principal stepped onto the stage carrying a school magazine with gold edges from the **academy（学校；学园）**, followed by the librarian holding a thick **album（相册）**. The strange thing was that when the album was opened, the class photos inside actually changed their poses by themselves, as if none of them wanted to stay ordinary pictures.",
+      "While everyone was staring in amazement, a sudden **cyclone（旋风）** swept across the playground and sent the **dahlia（大丽花）** flowers flying out of the flowerbeds. The cafeteria auntie leaned out of the window with a bottle of **ketchup（番茄酱）** and shouted for everyone not to spill lunch on the flowers. The dance teacher, still wearing a **leotard（紧身舞衣）**, ran out to help, making the whole scene look like a live play called Teachers Versus the Wind.",
+      "When the wind finally calmed a little, the language teacher held up a **manuscript（手稿）** and continued explaining the origins of words. The biology teacher reminded us that we all needed **oxygen（氧气）** every day, while the geography teacher pointed at the **volcano（火山）** model in the corner and warned everyone not to get too close or it might explode into colored paper again. Just when it seemed the lesson might finally end peacefully, the principal spun around in a wonderfully **zany（滑稽古怪地）** way and flung an entire box of crayons into the air. The class unanimously decided that what they would remember most was not only the word origins, but also the principal's impossible entrance."
     ]
   },
   "scholastic-g5-g5-u1-w22": {
-    title: "第 22 单元荒诞记忆短文",
+    title: "Unit 22 Story",
     paragraphs: [
-      "前缀主题日刚开始，广播室就抢在校长前面发出一条 retroactive（追溯生效的）通知，说昨天没带作业的人，今天也要补交检讨。小王听完立刻大叫这规定太 irrational（不理性的），因为“昨天都过去了，为什么今天还要突然追罚”。全班还没吵出结果，后门就又传来一阵桌椅乱响。",
-      "原来一只戴领结的猴子突然冲进礼堂，试图 abduct（绑走）讲台上的班级奖杯。体育老师拔腿就追，小李却举手表示自己决定 abstain（弃权；不参与）这场追逐，因为他的鞋带已经打成死结，跑两步就会摔。就在大家忙着追猴子时，礼堂中央用纸箱搭出的 intersection（交叉路口）模型也突然自己转了方向，副校长只好赶紧 interpose（插到中间）维持秩序，像真的在高峰期执勤。",
-      "事情最糟糕的部分还在后面。那台本来就偶尔 malfunction（失灵）的投影仪，忽然投出一只 malformed（畸形的）紫色火龙影像，吓得全班瞬间散成一片。等场面终于平静下来，老师带着大家做 retrospective（回顾），卫生委员红着脸承认自己当时表现得太 irresponsible（不负责任的），因为别人忙着救场时，他还蹲在地上抢救自己的爆米花。校长听完长叹一口气，只说了一句：‘今天大家都学会了，前缀有时候比事件本身还刺激。’"
+      "Prefix Day had barely begun when the broadcasting room interrupted the principal with a **retroactive（追溯生效的）** notice saying that anyone who had forgotten homework yesterday now had to hand in an apology today as well. Wang immediately cried out that the rule was completely **irrational（不理性的）**, because yesterday was already over. The class had not even finished arguing when a crash of chairs came from the back door.",
+      "A monkey wearing a bow tie had burst into the auditorium and was trying to **abduct（绑走）** the class trophy from the stage. The PE teacher ran after it, but Li raised his hand and announced that he would **abstain（弃权；不参与）** from the chase because his shoelaces were tied in such a knot that he would fall after two steps. While everyone was running after the monkey, the cardboard **intersection（交叉路口）** model in the middle of the hall suddenly spun in a new direction, and the vice principal had to **interpose（插到中间）** himself to restore order like a traffic officer at rush hour.",
+      "The worst part was still to come. The projector, which already liked to **malfunction（失灵）** from time to time, suddenly cast the image of a **malformed（畸形的）** purple dragon on the wall, scattering the whole class at once. When things finally calmed down, the teacher led us through a **retrospective（回顾）**, and the hygiene monitor admitted in embarrassment that he had been terribly **irresponsible（不负责任的）** because while everyone else was rescuing the event, he had been crouching on the floor trying to save his popcorn. The principal sighed and said only one thing: on some days, prefixes are more exciting than the events themselves."
     ]
   },
   "scholastic-g5-g5-u1-w23": {
-    title: "第 23 单元荒诞记忆短文",
+    title: "Unit 23 Story",
     paragraphs: [
-      "学校决定把词缀科学展升级成 biannual（每年两次的）活动，消息一出，礼堂里的掌声差点把窗帘震歪。海洋组第一个上场，捧来一只会开合嘴巴的 bivalve（双壳贝）布偶，它用一本正经的语气欢迎大家，效果像极了贝壳版脱口秀。",
-      "第二组展示时，小周先去 commiserate（表示同情）没拿到最佳创意奖的机器人，安慰的话说得很真诚，可手却偷偷把对方掉下来的螺丝和贴纸 compile（收集整理）进了自己的书包。与此同时，物理老师正演示 hydroelectric（水力发电的）小模型，旁边一架 hydroplane（水上飞机）玩具竟然在洗手池里突然滑行起飞，差点把校长的奶茶打翻。",
-      "这下校长终于板起脸，强调随便拿别人东西是 illegal（非法的；不合规的）行为，谁也不能假装自己 illiterate（不识字的），看不懂失物招领告示。广播站随后用 monotone（单调的声音）念出获奖名单，每个名字短得像 monosyllable（单音节词）一样干脆，可操场上的掌声还是响了很久。因为大家都知道，真正让这次活动难忘的，不只是奖项，而是那架差点冲进奶茶里的小飞机。"
+      "The school decided to upgrade the science prefix fair into a **biannual（每年两次的）** event, and the applause in the auditorium almost shook the curtains sideways. The ocean team went first and brought up a **bivalve（双壳贝）** puppet that opened and shut its shell while greeting everyone in a perfectly serious voice, like a clamshell version of a talk-show host.",
+      "During the second presentation, Zhou walked over to **commiserate（表示同情）** with a robot that had failed to win the creativity prize. His words sounded sincere, but while talking he quietly **compile（收集整理）**d the robot's fallen screws and stickers into his own backpack. At the same time, the physics teacher was demonstrating a **hydroelectric（水力发电的）** model when a toy **hydroplane（水上飞机）** suddenly skimmed across the sink and almost crashed into the principal's milk tea.",
+      "That finally made the principal put on a serious face. He reminded everyone that taking other people's things was **illegal（非法的；不合规的）**, and no one could pretend to be **illiterate（不识字的）** and ignore the lost-and-found sign. Later the broadcasting room read out the prize list in a flat **monotone（单调的声音）**, each name as short and sharp as a **monosyllable（单音节词）**. Even so, the applause on the playground lasted a long time, because everyone knew that the thing they would remember best was not the prize list, but the tiny plane that had almost flown into the principal's drink."
     ]
   },
   "scholastic-g5-g5-u1-w24": {
-    title: "第 24 单元荒诞记忆短文",
+    title: "Unit 24 Story",
     paragraphs: [
-      "学期末颁奖礼开始前，校长忽然收到一封 accusation（指控），说教师办公室里的曲奇在半夜离奇失踪。正巧一位来校做健康讲座的 dentist（牙医）家长还没离开，就被大家临时推举成“曲奇侦探”，因为所有人都觉得，能看清牙齿问题的人，应该也能看清饼干案线索。",
-      "案子还没查明，礼堂里又发生了新的意外。悬在台上的横幅忽然松开一角，一只仓鼠飞快冲上讲台，用两只小爪子死死拽住绳子，场面堪称 heroic（英勇的）。校史组老师激动得直说这简直是学校最 historic（有历史意义的）时刻，广播站立刻组织 journalism（新闻报道）小组冲上前采访，恨不得给仓鼠开一场专访发布会。",
-      "采访刚进行到一半，班里那个 perfectionist（完美主义者）班长就开始皱眉，抱怨整个流程太乱，建议大家先去 recreation（娱乐活动区）缓一缓。门外花坛里，一盆 succulent（多汁植物）被风吹得左右乱晃，礼堂内外的气氛也变得有些 turbulent（动荡的），可校长依然坚持保持 optimism（乐观），说只要饼干没被真的吃掉，一切都还能收场。最后真相终于揭晓：所谓失窃，不过是保安把曲奇锁进了文件柜忘了说。全礼堂顿时笑成一片，大家一致认为，这起饼干案比任何正式节目都更适合当学期末的压轴大戏。"
+      "Before the end-of-term awards ceremony even began, the principal received an **accusation（指控）** saying that the cookies in the teachers' office had mysteriously disappeared during the night. By perfect chance, a parent who was at school to give a health talk and happened to be a **dentist（牙医）** had not yet left, so everyone immediately chose him to become the \"Cookie Detective.\" After all, if he could notice small tooth problems, surely he could notice cookie clues.",
+      "Before the case could be solved, another disaster struck the auditorium. One corner of the banner hanging above the stage suddenly came loose, and a hamster rushed forward and held the rope with both paws in a scene so **heroic（英勇的）** that the school history teacher declared it one of the most **historic（有历史意义的）** moments in campus memory. The broadcasting room instantly sent over the **journalism（新闻报道）** team to interview the hamster as if it deserved its own press conference.",
+      "Halfway through the interview, our **perfectionist（完美主义者）** class monitor began frowning and complaining that the whole ceremony had become too messy. He suggested that everyone go calm down in the **recreation（娱乐活动区）** area. Outside, a **succulent（多汁植物）** in the flowerbed swayed wildly in the wind, and the atmosphere inside and outside the hall became slightly **turbulent（动荡的）**. Still, the principal insisted on keeping his **optimism（乐观）**, saying that as long as the cookies had not really been eaten, the day could still be saved. In the end, the truth turned out to be simple: the guard had locked the cookies in a filing cabinet and forgotten to mention it. The whole auditorium burst into laughter, and everyone agreed that the Cookie Case made a better grand finale than any official program."
     ]
   }
 };

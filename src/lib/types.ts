@@ -92,6 +92,7 @@ export type UnitProgress = {
   attempts: number;
   bestAccuracy: number;
   completed: boolean;
+  pointsEarned: number;
   completedAt: string | null;
   lastPracticedAt: string | null;
 };

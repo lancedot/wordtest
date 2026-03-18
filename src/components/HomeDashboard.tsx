@@ -3,12 +3,12 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { getCurriculumDisplayName, getStudySetBadge, getStudySetHref, getStudySetLabel } from "@/lib/curriculum";
-import { CurriculumWeek, UnitStudyStatus, WordEntry } from "@/lib/types";
+import { CurriculumWeek, WordEntry } from "@/lib/types";
 import {
   getCompletedUnitCount,
   getDueWords,
   getProgressSnapshot,
-  getRecommendedWeekId,
+  getTotalPoints,
   getUnitStudyState
 } from "@/lib/progress";
 
@@ -19,41 +19,29 @@ type HomeDashboardProps = {
 };
 
 export function HomeDashboard({ week, words, weeks }: HomeDashboardProps) {
-  const [summary, setSummary] = useState({
-    dueCount: 0,
-    studiedCount: 0,
-    masteredCount: 0,
-    completedUnitCount: 0
-  });
-  const [recommendedWeekId, setRecommendedWeekId] = useState(week.id);
-  const [unitStatuses, setUnitStatuses] = useState<Record<string, UnitStudyStatus>>({});
-
-  const orderedWeeks = useMemo(() => {
-    return [...weeks].sort((left, right) => left.week - right.week);
+  const [totalPoints, setTotalPoints] = useState(0);
+  const [completedUnits, setCompletedUnits] = useState(0);
+  const defaultWeekWords = useMemo(() => {
+    return words.filter((entry) => entry.curriculumWeekId === week.id);
+  }, [week.id, words]);
+  const snapshot = useMemo(() => getProgressSnapshot(defaultWeekWords), [defaultWeekWords]);
+  const orderedWeekIds = useMemo(() => {
+    return [...weeks]
+      .sort((left, right) => left.unit - right.unit || left.week - right.week)
+      .map((entry) => entry.id);
   }, [weeks]);
-
-  const orderedWeekIds = useMemo(() => orderedWeeks.map((entry) => entry.id), [orderedWeeks]);
-  const recommendedWeek =
-    orderedWeeks.find((entry) => entry.id === recommendedWeekId) ?? week;
-  const recommendedWords = useMemo(() => {
-    return words.filter((entry) => entry.curriculumWeekId === recommendedWeek.id);
-  }, [recommendedWeek.id, words]);
+  const summary = useMemo(() => {
+    return {
+      dueCount: getDueWords(defaultWeekWords).length,
+      studiedCount: snapshot.filter((entry) => entry.progress.timesSeen > 0).length,
+      masteredCount: snapshot.filter((entry) => entry.progress.status === "mastered").length
+    };
+  }, [defaultWeekWords, snapshot]);
 
   useEffect(() => {
-    const snapshot = getProgressSnapshot(words);
-    const nextStatuses = Object.fromEntries(
-      orderedWeekIds.map((weekId) => [weekId, getUnitStudyState(weekId, orderedWeekIds).status])
-    ) as Record<string, UnitStudyStatus>;
-
-    setSummary({
-      dueCount: getDueWords(recommendedWords).length,
-      studiedCount: snapshot.filter((entry) => entry.progress.timesSeen > 0).length,
-      masteredCount: snapshot.filter((entry) => entry.progress.status === "mastered").length,
-      completedUnitCount: getCompletedUnitCount(orderedWeekIds)
-    });
-    setUnitStatuses(nextStatuses);
-    setRecommendedWeekId(getRecommendedWeekId(orderedWeekIds) ?? week.id);
-  }, [orderedWeekIds, recommendedWords, week.id, words]);
+    setTotalPoints(getTotalPoints());
+    setCompletedUnits(getCompletedUnitCount(orderedWeekIds));
+  }, [orderedWeekIds]);
 
   const groupedWeeks = useMemo(() => {
     const gradeMap = new Map<number, Map<number, CurriculumWeek[]>>();
@@ -79,87 +67,81 @@ export function HomeDashboard({ week, words, weeks }: HomeDashboardProps) {
       }));
   }, [weeks]);
 
-  const currentPoints = summary.completedUnitCount * 10;
-  const maxPoints = 240; // 24 units * 10 points
+  const unitSummaries = useMemo(() => {
+    return new Map(
+      weeks.map((entry) => {
+        const unitWords = words.filter((word) => word.curriculumWeekId === entry.id);
+        const unitSnapshot = getProgressSnapshot(unitWords);
+        const studiedCount = unitSnapshot.filter((item) => item.progress.timesSeen > 0).length;
+        const unitState = getUnitStudyState(entry.id, orderedWeekIds);
+        let stateLabel = "未开始";
+        let stateClassName = "pill";
+
+        if (unitState.completed) {
+          stateLabel = "已完成";
+          stateClassName = "pill pill-complete";
+        } else if (studiedCount > 0) {
+          stateLabel = "学习中";
+          stateClassName = "pill pill-progress";
+        }
+
+        return [
+          entry.id,
+          {
+            stateLabel,
+            stateClassName,
+            studiedCount,
+            dueCount: getDueWords(unitWords).length
+          }
+        ];
+      })
+    );
+  }, [orderedWeekIds, weeks, words]);
 
   return (
     <div className="section-stack">
       <section className="hero hero-grid">
         <div>
-          <span className="tiny-pill">{getStudySetBadge(recommendedWeek)}</span>
-          <h1>本单元单词学习</h1>
+          <span className="tiny-pill">{getStudySetBadge(week)}</span>
+          <h1>先选单元，再开始学习</h1>
           <p>
-            以单元为单位，一次专注 10 个词，先读短文，再看单词卡，最后做练习。
+            默认从第 1 单元开始。每个单元的主循环都是：先读短文，再看卡片，最后做 10 个单词练习。
           </p>
           <div className="button-row">
-            <Link href={getStudySetHref(recommendedWeek)} className="button">
-              继续当前单元
+            <Link href={getStudySetHref(week)} className="button">
+              从第 1 单元开始
             </Link>
-            <Link href={`/practice/${recommendedWeek.id}`} className="button-secondary">
-              开始练习
+            <Link href="/mistakes" className="button-secondary">
+              错题重练
             </Link>
           </div>
         </div>
         <div className="summary-card">
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-            <h3>今日概览</h3>
-            <div className="pill" style={{ background: 'rgba(251, 191, 36, 0.2)', color: '#b45309', fontWeight: 'bold' }}>
-              🌟 积分: {currentPoints} / {maxPoints}
-            </div>
-          </div>
+          <h3>学习总览</h3>
           <div className="metric-grid">
             <div className="metric-card">
-              <span className="muted">待复习</span>
-              <span className="metric-value">{summary.dueCount}</span>
-            </div>
-            <div className="metric-card">
-              <span className="muted">已学习</span>
-              <span className="metric-value">{summary.studiedCount}</span>
-            </div>
-            <div className="metric-card">
-              <span className="muted">已掌握</span>
-              <span className="metric-value">{summary.masteredCount}</span>
+              <span className="muted">总积分</span>
+              <span className="metric-value">{totalPoints}</span>
             </div>
             <div className="metric-card">
               <span className="muted">已完成单元</span>
-              <span className="metric-value">{summary.completedUnitCount}</span>
+              <span className="metric-value">{completedUnits}</span>
+            </div>
+            <div className="metric-card">
+              <span className="muted">新词和待复习</span>
+              <span className="metric-value">{summary.dueCount}</span>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="dashboard-grid">
-        <div className="section-card">
-          <h3>本单元学习重点</h3>
-          <p className="section-intro">{recommendedWeek.overview}</p>
-          <div className="pill-row">
-            <span className="pill">短文预热</span>
-            <span className="pill">10 词卡片</span>
-            <span className="pill">单元练习</span>
-            <span className="pill">
-              {unitStatuses[recommendedWeek.id] === "completed" ? "已完成" : "可学习"}
-            </span>
-          </div>
-        </div>
-        <div className="section-card">
-          <h3>快捷入口</h3>
-          <div className="card-list">
-            <Link href={getStudySetHref(recommendedWeek)} className="word-card">
-              <strong>学习当前单元</strong>
-              <span className="muted">查看这一单元的 10 个目标词</span>
-            </Link>
-            <Link href="/review" className="word-card">
-              <strong>复习薄弱单词</strong>
-              <span className="muted">把错词更快带回来重练</span>
-            </Link>
-          </div>
+          <p className="section-intro" style={{ marginTop: "1rem" }}>
+            第 1 单元当前已学习 {summary.studiedCount} 个词，已掌握 {summary.masteredCount} 个词。
+          </p>
         </div>
       </section>
 
       <section className="section-card">
         <h3>全部单元</h3>
         <p className="section-intro">
-          你可以自由选择任何单元进行学习，每完成一个单元即可获得 10 积分！
+          可以从第 1 单元开始，也可以直接点开后面的单元。
         </p>
         <div className="card-list">
           {groupedWeeks.map((gradeEntry) => (
@@ -168,19 +150,29 @@ export function HomeDashboard({ week, words, weeks }: HomeDashboardProps) {
               <div className="card-list" style={{ marginTop: "0.85rem" }}>
                 {gradeEntry.units.map((unitEntry) => (
                   <div className="sentence-item" key={`${gradeEntry.grade}-${unitEntry.unit}`}>
-                    <strong>第 {unitEntry.unit} 单元</strong>
+                    <div className="pill-row" style={{ justifyContent: "space-between", alignItems: "center" }}>
+                      <strong>第 {unitEntry.unit} 单元</strong>
+                      {unitEntry.weeks[0] ? (
+                        <span className={unitSummaries.get(unitEntry.weeks[0].id)?.stateClassName ?? "pill"}>
+                          {unitSummaries.get(unitEntry.weeks[0].id)?.stateLabel ?? "未开始"}
+                        </span>
+                      ) : null}
+                    </div>
+                    {unitEntry.weeks[0] ? (
+                      <p className="muted" style={{ marginTop: "0.75rem", marginBottom: 0 }}>
+                        已学习 {unitSummaries.get(unitEntry.weeks[0].id)?.studiedCount ?? 0} 个词，
+                        待复习 {unitSummaries.get(unitEntry.weeks[0].id)?.dueCount ?? 0} 个词。
+                      </p>
+                    ) : null}
                     <div className="pill-row" style={{ marginTop: "0.75rem" }}>
                       {unitEntry.weeks.map((entry) => (
                         <Link
                           key={entry.id}
                           href={getStudySetHref(entry)}
-                          className={`pill ${
-                            unitStatuses[entry.id] === "completed" ? "pill-complete" : ""
-                          }`}
+                          className="pill"
                           title={getCurriculumDisplayName(entry.curriculum)}
                         >
-                          {getStudySetLabel(entry)}{" "}
-                          {unitStatuses[entry.id] === "completed" ? "· 已完成" : ""}
+                          {getStudySetLabel(entry)}
                         </Link>
                       ))}
                     </div>

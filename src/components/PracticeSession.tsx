@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { getStudySetHref } from "@/lib/curriculum";
 import { CurriculumWeek, PracticeQuestion, SynonymCard, WordEntry } from "@/lib/types";
 import { buildPracticeQuestions } from "@/lib/practice";
-import { getUnitStudyState, recordPracticeResult, recordUnitPractice } from "@/lib/progress";
+import { recordPracticeResult, recordUnitPractice } from "@/lib/progress";
 
 type PracticeSessionProps = {
   week: CurriculumWeek;
@@ -14,6 +14,7 @@ type PracticeSessionProps = {
   cards: SynonymCard[];
   title: string;
   description: string;
+  sessionKind?: "unit" | "review";
 };
 
 export function PracticeSession({
@@ -22,7 +23,8 @@ export function PracticeSession({
   words,
   cards,
   title,
-  description
+  description,
+  sessionKind = "unit"
 }: PracticeSessionProps) {
   const [questions, setQuestions] = useState<PracticeQuestion[]>([]);
   const [questionIndex, setQuestionIndex] = useState(0);
@@ -30,36 +32,42 @@ export function PracticeSession({
   const [showFeedback, setShowFeedback] = useState(false);
   const [correctCount, setCorrectCount] = useState(0);
   const [resultSaved, setResultSaved] = useState(false);
+  const [awardedPoints, setAwardedPoints] = useState(0);
+  const [totalPoints, setTotalPoints] = useState(0);
   const orderedWeeks = useMemo(() => {
     return [...allWeeks].sort((left, right) => left.week - right.week);
   }, [allWeeks]);
-  const orderedWeekIds = useMemo(() => orderedWeeks.map((entry) => entry.id), [orderedWeeks]);
   const currentIndex = orderedWeeks.findIndex((entry) => entry.id === week.id);
-  const previousWeek = currentIndex > 0 ? orderedWeeks[currentIndex - 1] : undefined;
   const nextWeek = currentIndex >= 0 ? orderedWeeks[currentIndex + 1] : undefined;
-  const unitState = getUnitStudyState(week.id, orderedWeekIds);
 
   useEffect(() => {
-    setQuestions(buildPracticeQuestions(words, cards, 8));
+    setQuestions(buildPracticeQuestions(words, cards, 10));
     setQuestionIndex(0);
     setSelectedChoice(null);
     setShowFeedback(false);
     setCorrectCount(0);
     setResultSaved(false);
+    setAwardedPoints(0);
+    setTotalPoints(0);
   }, [cards, words]);
 
   const question = questions[questionIndex];
   const isComplete = questions.length > 0 && questionIndex >= questions.length;
   const accuracy = questions.length > 0 ? Math.round((correctCount / questions.length) * 100) : 0;
-  const passed = accuracy >= 80;
+
   useEffect(() => {
     if (!isComplete || resultSaved) {
       return;
     }
 
-    recordUnitPractice(week.id, accuracy);
+    if (sessionKind === "unit") {
+      const result = recordUnitPractice(week.id, accuracy);
+      setAwardedPoints(result.awardedPoints);
+      setTotalPoints(result.totalPoints);
+    }
+
     setResultSaved(true);
-  }, [accuracy, isComplete, resultSaved, week.id]);
+  }, [accuracy, isComplete, resultSaved, sessionKind, week.id]);
 
   function chooseAnswer(choice: string) {
     if (!question || showFeedback) {
@@ -113,33 +121,41 @@ export function PracticeSession({
             <span className="metric-value">{accuracy}%</span>
           </div>
           <div className="metric-card">
-            <span className="muted">单元结果</span>
-            <span className="metric-value">{passed ? "已过关" : "再练一次"}</span>
+            <span className="muted">{sessionKind === "unit" ? "单元状态" : "复习状态"}</span>
+            <span className="metric-value">已完成</span>
           </div>
+          {sessionKind === "unit" ? (
+            <div className="metric-card">
+              <span className="muted">本次积分</span>
+              <span className="metric-value">+{awardedPoints}</span>
+            </div>
+          ) : null}
         </div>
-        <div className={`feedback-box ${passed ? "good" : "retry"}`}>
+        <div className={`feedback-box ${awardedPoints > 0 ? "good" : "retry"}`}>
           <strong>
-            {passed
-              ? "本单元已完成，下一单元已经解锁。"
-              : "这一轮已经记住了不少词，再练一轮会更稳。"}
+            {sessionKind === "unit"
+              ? awardedPoints > 0
+                ? "本单元练习完成，已获得 10 积分。"
+                : "本单元练习完成，这 10 积分你已经拿过了。"
+              : "这轮错题重练已经完成。"}
           </strong>
           <p className="muted">
-            {passed
-              ? "保持 80% 及以上的正确率，就能继续往下学。"
-              : "单元练习达到 80% 及以上，就会自动标记完成并解锁下一单元。"}
+            {sessionKind === "unit"
+              ? `错题已经自动进入错题集。当前总积分：${totalPoints}。`
+              : "错题已经继续留在错题集中，后面还可以再刷一轮。"}
           </p>
         </div>
         <div className="button-row">
-          <Link href="/review" className="button">
-            打开复习队列
+          <Link href="/mistakes" className="button">
+            打开错题集
           </Link>
-          {passed && nextWeek ? (
+          {sessionKind === "unit" && nextWeek ? (
             <Link href={getStudySetHref(nextWeek)} className="button-secondary">
               前往下一单元
             </Link>
           ) : (
             <Link href={`/practice/${week.id}`} className="button-secondary">
-              再练一次
+              {sessionKind === "unit" ? "再练一次" : "继续复习"}
             </Link>
           )}
         </div>

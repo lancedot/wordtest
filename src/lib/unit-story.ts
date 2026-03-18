@@ -53,41 +53,41 @@ function getShortMeaning(word: WordEntry) {
   return meaning || "意思待补充";
 }
 
-function formatBilingualWord(word: WordEntry) {
-  return `${word.word}（${getShortMeaning(word)}）`;
+function storyToken(word: WordEntry) {
+  return `[[${word.id}::${word.word}::${getShortMeaning(word)}]]`;
 }
 
 function buildRoleClause(word: WordEntry, index: number) {
-  const bilingual = formatBilingualWord(word);
+  const token = storyToken(word);
   const role = inferWordRole(word);
 
   if (role === "noun") {
     return [
-      `操场中央居然摆着一个 ${bilingual}，里面装满了会发光的油条。`,
-      `保健室门口又滚出来一个 ${bilingual}，一本正经地要求大家向它敬礼。`,
-      `广播室里甚至冒出一个 ${bilingual}，非说自己才是这场比赛的总裁判。`
+      `Near the stage stood a giant ${token}, and nobody could explain why it had arrived before the teachers.`,
+      `By the lunch table, a mysterious ${token} kept acting like the official judge of the whole event.`,
+      `Under the flagpole, a wobbling ${token} blinked at everyone as if it had written the schedule itself.`
     ][index % 3];
   }
 
   if (role === "verb") {
     return [
-      `校长本来想当场 ${bilingual} 这条离谱规定，可扩音器先一步唱起了生日歌。`,
-      `班长只好试着 ${bilingual} 那份比赛规则，结果规则自己折成纸飞机飞走了。`,
-      `体育老师冲过去想 ${bilingual} 那台冰箱，却被一只会鼓掌的鸡郑重拦下。`
+      `The principal tried to ${token} the ridiculous rule, but the microphone answered before he could finish his sentence.`,
+      `Our class had to ${token} the machine before it sprayed glitter into the soup.`,
+      `The gym teacher ran forward to ${token} the problem, only to be stopped by a goose wearing a paper badge.`
     ][index % 3];
   }
 
   if (role === "adverb") {
     return [
-      `可五年级五班还是 ${bilingual} 地鼓起掌来，仿佛这种事每天都会发生。`,
-      `大家只好 ${bilingual} 地把作业本顶在头上，以免被会飞的勺子误判成参赛作品。`
+      `Even then, our class clapped ${token}, as if this kind of nonsense happened every Tuesday.`,
+      `The hamster nodded ${token} and kept pushing the trophy cart through the hallway.`
     ][index % 2];
   }
 
   return [
-    `那张报名表看起来实在太 ${bilingual}，连最淡定的值日生都往后退了三步。`,
-    `全班这才发现，今天的校规格外 ${bilingual}，因为每一条后面都画着一只穿雨鞋的章鱼。`,
-    `科学老师盯着那团正在冒泡的豆浆，严肃地说这场面有点 ${bilingual}。`
+    `The poster looked so ${token} that even the calmest student took three careful steps backward.`,
+    `By second period, the whole plan felt strangely ${token}, which only made everyone laugh harder.`,
+    `The science teacher stared at the bubbling machine and whispered that the situation was becoming dangerously ${token}.`
   ][index % 3];
 }
 
@@ -102,17 +102,17 @@ export function buildUnitStory(week: CurriculumWeek, words: WordEntry[]): UnitSt
   const clauses = orderedWords.map((word, index) => buildRoleClause(word, index));
 
   return {
-    title: `第 ${week.week} 单元荒诞记忆短文`,
+    title: `Unit ${week.week} Story`,
     paragraphs: [
-      `周一早上，五年级五班刚准备升旗，校长就宣布学校要举办“会飞午餐盒艺术节”。${clauses
+      `On Monday morning, Class 5B thought it was walking into an ordinary school assembly. Instead, the principal announced a "Ridiculous School Fair" and everything went wrong at once. ${clauses
         .slice(0, 4)
-        .join("")}大家本来以为这已经够离谱了，没想到这还只是开场。`,
-      `还没等同学们把下巴捡起来，科学老师又推来一台会背乘法表的冰箱，说这是本次活动的评委。${clauses
+        .join(" ")} Nobody panicked yet, because it still felt like the beginning of a strange joke.`,
+      `By the time the science teacher rolled out a humming machine and called it the guest judge, the fair had become much stranger. ${clauses
         .slice(4, 7)
-        .join("")}此时连走廊上的盆栽都开始左右摇头，像是在替大家叹气。`,
-      `到了午饭前，整个操场已经乱成一锅会唱歌的紫菜汤。${clauses
+        .join(" ")} Even the plants by the hallway windows seemed to lean away from the noise.`,
+      `Before lunch, the entire playground looked like a comedy show that had escaped from the stage. ${clauses
         .slice(7, 10)
-        .join("")}最后校长只好宣布活动暂停，可那只戴领结的鸭子已经叼着奖状跑进了广播室，全班笑到根本没人想回座位。`
+        .join(" ")} In the end, the principal called for a pause, but a duck in a bow tie had already stolen the prize ribbon, so the whole class laughed too hard to feel sorry for anything.`
     ].filter(Boolean)
   };
 }

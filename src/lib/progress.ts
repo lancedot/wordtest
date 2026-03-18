@@ -14,7 +14,7 @@ export const STORAGE_KEY = "vocabulary-progress-v2";
 export const UNIT_STORAGE_KEY = "vocabulary-unit-progress-v1";
 
 const reviewStepsInHours = [0, 12, 48, 120, 336];
-const unitPassAccuracy = 80;
+const unitCompletionPoints = 10;
 
 function createProgress(wordId: string): UserWordProgress {
   return {
@@ -37,6 +37,7 @@ function createUnitProgress(weekId: string): UnitProgress {
     attempts: 0,
     bestAccuracy: 0,
     completed: false,
+    pointsEarned: 0,
     completedAt: null,
     lastPracticedAt: null
   };
@@ -155,6 +156,7 @@ export function recordPracticeResult(
   if (correct) {
     progress.timesCorrect += 1;
     progress.masteryScore = Math.min(progress.masteryScore + 20, 100);
+    progress.savedForReview = false;
   } else {
     progress.timesWrong += 1;
     progress.masteryScore = Math.max(progress.masteryScore - 15, 0);
@@ -213,6 +215,38 @@ export function getDueWords(words: WordEntry[]) {
     }
 
     return new Date(progress.nextReviewAt).getTime() <= now;
+  });
+}
+
+export function getReviewWords(words: WordEntry[]) {
+  const now = Date.now();
+  const store = loadProgress();
+
+  return words.filter((word) => {
+    const progress = ensureProgress(store, word.id);
+
+    if (progress.timesSeen === 0) {
+      return false;
+    }
+
+    if (progress.savedForReview) {
+      return true;
+    }
+
+    if (!progress.nextReviewAt) {
+      return progress.status === "review" || progress.status === "learning";
+    }
+
+    return new Date(progress.nextReviewAt).getTime() <= now;
+  });
+}
+
+export function getWrongAnswerWords(words: WordEntry[]) {
+  const store = loadProgress();
+
+  return words.filter((word) => {
+    const progress = ensureProgress(store, word.id);
+    return progress.timesSeen > 0 && progress.savedForReview;
   });
 }
 
@@ -282,17 +316,21 @@ export function recordUnitPractice(weekId: string, accuracy: number) {
   const store = loadUnitProgress();
   const progress = ensureUnitProgress(store, weekId);
   const now = new Date().toISOString();
+  const awardedPoints = progress.pointsEarned === 0 ? unitCompletionPoints : 0;
 
   progress.attempts += 1;
   progress.lastPracticedAt = now;
   progress.bestAccuracy = Math.max(progress.bestAccuracy, accuracy);
-
-  if (accuracy >= unitPassAccuracy) {
-    progress.completed = true;
-    progress.completedAt = progress.completedAt ?? now;
-  }
+  progress.completed = true;
+  progress.completedAt = progress.completedAt ?? now;
+  progress.pointsEarned += awardedPoints;
 
   saveUnitProgress(store);
+
+  return {
+    awardedPoints,
+    totalPoints: getTotalPoints()
+  };
 }
 
 export function getUnitStudyState(
@@ -331,4 +369,12 @@ export function getCompletedUnitCount(orderedWeekIds: string[]) {
   return orderedWeekIds.filter((weekId) => {
     return getUnitStudyState(weekId, orderedWeekIds).completed;
   }).length;
+}
+
+export function getTotalPoints() {
+  const store = loadUnitProgress();
+
+  return Object.values(store).reduce((total, entry) => {
+    return total + entry.pointsEarned;
+  }, 0);
 }

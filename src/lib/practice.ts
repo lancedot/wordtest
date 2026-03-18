@@ -187,7 +187,7 @@ function makeContrastSentence(primaryWord: string, contrastWord: string) {
 export function buildPracticeQuestions(
   words: WordEntry[],
   cards: SynonymCard[],
-  limit = 8
+  limit = 10
 ): PracticeQuestion[] {
   const questions: PracticeQuestion[] = [];
 

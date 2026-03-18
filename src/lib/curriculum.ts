@@ -3,11 +3,11 @@ import { CurriculumWeek } from "@/lib/types";
 export function getCurriculumDisplayName(curriculum: string) {
   switch (curriculum) {
     case "scholastic-g5":
-      return "Scholastic 五年级词汇书";
+      return "五年级单元学习";
     case "wonders":
-      return "Wonders";
+      return "Wonders 五年级";
     default:
-      return "导入词库";
+      return "五年级词汇";
   }
 }
 

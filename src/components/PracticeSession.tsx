@@ -52,7 +52,6 @@ export function PracticeSession({
   const isComplete = questions.length > 0 && questionIndex >= questions.length;
   const accuracy = questions.length > 0 ? Math.round((correctCount / questions.length) * 100) : 0;
   const passed = accuracy >= 80;
-
   useEffect(() => {
     if (!isComplete || resultSaved) {
       return;
@@ -61,30 +60,6 @@ export function PracticeSession({
     recordUnitPractice(week.id, accuracy);
     setResultSaved(true);
   }, [accuracy, isComplete, resultSaved, week.id]);
-
-  if (unitState.status === "locked") {
-    return (
-      <section className="practice-card">
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <div className="feedback-box retry">
-          <strong>这一单元还没解锁。</strong>
-          <p className="muted">先完成上一单元练习，并达到 80% 及以上，再来挑战这一单元。</p>
-        </div>
-        <div className="button-row">
-          {previousWeek ? (
-            <Link href={getStudySetHref(previousWeek)} className="button">
-              回到上一单元
-            </Link>
-          ) : (
-            <Link href="/" className="button">
-              回到首页
-            </Link>
-          )}
-        </div>
-      </section>
-    );
-  }
 
   function chooseAnswer(choice: string) {
     if (!question || showFeedback) {

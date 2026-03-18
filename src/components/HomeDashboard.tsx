@@ -79,6 +79,9 @@ export function HomeDashboard({ week, words, weeks }: HomeDashboardProps) {
       }));
   }, [weeks]);
 
+  const currentPoints = summary.completedUnitCount * 10;
+  const maxPoints = 240; // 24 units * 10 points
+
   return (
     <div className="section-stack">
       <section className="hero hero-grid">
@@ -86,7 +89,7 @@ export function HomeDashboard({ week, words, weeks }: HomeDashboardProps) {
           <span className="tiny-pill">{getStudySetBadge(recommendedWeek)}</span>
           <h1>本单元单词学习</h1>
           <p>
-            以单元为单位，一次专注 10 个词，先读荒诞短文，再看单词卡，最后做练习。
+            以单元为单位，一次专注 10 个词，先读短文，再看单词卡，最后做练习。
           </p>
           <div className="button-row">
             <Link href={getStudySetHref(recommendedWeek)} className="button">
@@ -98,10 +101,15 @@ export function HomeDashboard({ week, words, weeks }: HomeDashboardProps) {
           </div>
         </div>
         <div className="summary-card">
-          <h3>今日概览</h3>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+            <h3>今日概览</h3>
+            <div className="pill" style={{ background: 'rgba(251, 191, 36, 0.2)', color: '#b45309', fontWeight: 'bold' }}>
+              🌟 积分: {currentPoints} / {maxPoints}
+            </div>
+          </div>
           <div className="metric-grid">
             <div className="metric-card">
-              <span className="muted">本单元新词和待复习</span>
+              <span className="muted">待复习</span>
               <span className="metric-value">{summary.dueCount}</span>
             </div>
             <div className="metric-card">
@@ -117,9 +125,6 @@ export function HomeDashboard({ week, words, weeks }: HomeDashboardProps) {
               <span className="metric-value">{summary.completedUnitCount}</span>
             </div>
           </div>
-          <p className="section-intro">
-            建议每次完整学完 1 个单元的 10 个词，再做一轮单元练习。
-          </p>
         </div>
       </section>
 
@@ -128,11 +133,11 @@ export function HomeDashboard({ week, words, weeks }: HomeDashboardProps) {
           <h3>本单元学习重点</h3>
           <p className="section-intro">{recommendedWeek.overview}</p>
           <div className="pill-row">
-            <span className="pill">荒诞短文预热</span>
-            <span className="pill">10 词卡片学习</span>
-            <span className="pill">单元练习复习</span>
+            <span className="pill">短文预热</span>
+            <span className="pill">10 词卡片</span>
+            <span className="pill">单元练习</span>
             <span className="pill">
-              {unitStatuses[recommendedWeek.id] === "completed" ? "已完成" : "当前可学"}
+              {unitStatuses[recommendedWeek.id] === "completed" ? "已完成" : "可学习"}
             </span>
           </div>
         </div>
@@ -147,10 +152,6 @@ export function HomeDashboard({ week, words, weeks }: HomeDashboardProps) {
               <strong>复习薄弱单词</strong>
               <span className="muted">把错词更快带回来重练</span>
             </Link>
-            <Link href="/parent" className="word-card">
-              <strong>打开家长视图</strong>
-              <span className="muted">查看进度和易混词</span>
-            </Link>
           </div>
         </div>
       </section>
@@ -158,7 +159,7 @@ export function HomeDashboard({ week, words, weeks }: HomeDashboardProps) {
       <section className="section-card">
         <h3>全部单元</h3>
         <p className="section-intro">
-          现在固定按五年级词汇书的单元推进，每个单元都是 10 个词。
+          你可以自由选择任何单元进行学习，每完成一个单元即可获得 10 积分！
         </p>
         <div className="card-list">
           {groupedWeeks.map((gradeEntry) => (
@@ -170,27 +171,17 @@ export function HomeDashboard({ week, words, weeks }: HomeDashboardProps) {
                     <strong>第 {unitEntry.unit} 单元</strong>
                     <div className="pill-row" style={{ marginTop: "0.75rem" }}>
                       {unitEntry.weeks.map((entry) => (
-                        unitStatuses[entry.id] === "locked" ? (
-                          <span
-                            key={entry.id}
-                            className="pill pill-locked"
-                            title={getCurriculumDisplayName(entry.curriculum)}
-                          >
-                            {getStudySetLabel(entry)} · 未解锁
-                          </span>
-                        ) : (
-                          <Link
-                            key={entry.id}
-                            href={getStudySetHref(entry)}
-                            className={`pill ${
-                              unitStatuses[entry.id] === "completed" ? "pill-complete" : ""
-                            }`}
-                            title={getCurriculumDisplayName(entry.curriculum)}
-                          >
-                            {getStudySetLabel(entry)}{" "}
-                            {unitStatuses[entry.id] === "completed" ? "· 已完成" : "· 可学习"}
-                          </Link>
-                        )
+                        <Link
+                          key={entry.id}
+                          href={getStudySetHref(entry)}
+                          className={`pill ${
+                            unitStatuses[entry.id] === "completed" ? "pill-complete" : ""
+                          }`}
+                          title={getCurriculumDisplayName(entry.curriculum)}
+                        >
+                          {getStudySetLabel(entry)}{" "}
+                          {unitStatuses[entry.id] === "completed" ? "· 已完成" : ""}
+                        </Link>
                       ))}
                     </div>
                   </div>

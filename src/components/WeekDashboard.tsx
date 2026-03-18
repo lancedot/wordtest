@@ -57,40 +57,6 @@ export function WeekDashboard({ week, words, cards, allWeeks }: WeekDashboardPro
     setUnitStatus(getUnitStudyState(week.id, orderedWeekIds).status);
   }, [orderedWeekIds, week.id, words]);
 
-  if (unitStatus === "locked") {
-    return (
-      <div className="section-stack">
-        <section className="hero hero-grid">
-          <div>
-            <span className="tiny-pill">单元未解锁</span>
-            <h1>{week.title}</h1>
-            <p>先完成前一个单元的练习，再来学这一单元，会更有连续感。</p>
-            <div className="button-row">
-              {previousWeek ? (
-                <Link href={getStudySetHref(previousWeek)} className="button">
-                  回到上一单元
-                </Link>
-              ) : (
-                <Link href="/" className="button">
-                  回到首页
-                </Link>
-              )}
-            </div>
-          </div>
-          <div className="summary-card">
-            <h3>解锁方式</h3>
-            <div className="stat-list">
-              <div className="stat-item">
-                <strong>先完成上一单元</strong>
-                <p className="muted">单元练习达到 80% 及以上，就会自动解锁下一单元。</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    );
-  }
-
   return (
     <div className="section-stack">
       <section className="hero hero-grid">

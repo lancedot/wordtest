@@ -306,14 +306,9 @@ export function getUnitStudyState(
 } {
   const store = loadUnitProgress();
   const progress = ensureUnitProgress(store, weekId);
-  const currentIndex = orderedWeekIds.indexOf(weekId);
-  const previousWeekId = currentIndex > 0 ? orderedWeekIds[currentIndex - 1] : undefined;
-  const previousCompleted = previousWeekId
-    ? ensureUnitProgress(store, previousWeekId).completed
-    : true;
 
   return {
-    status: progress.completed ? "completed" : previousCompleted ? "ready" : "locked",
+    status: progress.completed ? "completed" : "ready",
     attempts: progress.attempts,
     bestAccuracy: progress.bestAccuracy,
     completed: progress.completed
